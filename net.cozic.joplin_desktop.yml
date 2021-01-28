@@ -82,22 +82,21 @@ modules:
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache 
         npm_config_cache: /run/build/joplin/flatpak-node/npm-cache
         npm_config_nodedir: /usr/lib/sdk/node12
-        #DEBUG: electron-builder 
+        npm_config_offline: 'true'
+        npm_config_no_save: 'true'
+        npm_config_loglevel: 'verbose'
     build-commands:
-      - mkdir disabled && mv packages/{app-clipper,app-mobile,generator-joplin,plugins,server} disabled
-      - sed -i '/"husky". ".*"/d' package.json
-      # Pass opts to npm, --no-save is for checking package-lock.json when failed
-      - jq ". += {\"npmClient\":\"npm\", \"npmClientArgs\":[\"-ddd\",\"--offline\",\"--no-save\"]}" 
-        lerna.json > lerna.json.new &&
-        mv lerna.json{.new,}
-      - npm install --verbose --offline --no-save
+      - npm install
       # generateSha512.js require appimage build, need touch it
       # If no it will cause electron-builder failed without error message even set debug!
       - mkdir -p packages/app-desktop/dist && touch packages/app-desktop/dist/AppImage
+      # build 
       - . flatpak-node/electron-builder-arch-args.sh && 
         cd packages/app-desktop && 
-        npm run --ddd dist -- $ELECTRON_BUILDER_ARCH_ARGS --dir --linux dir
+        npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS --dir --linux dir
+      # install
       - cp -r packages/app-desktop/dist/linux*unpacked /app/joplin-desktop
+      - mv /app/joplin-desktop/{@joplinapp-desktop,joplin}
       - cd packages/app-desktop &&
         for size in 16 32 64 128 256 512; do
           [[ -e "build/icons/${size}x${size}.png" ]] &&
@@ -125,4 +124,4 @@ modules:
         dest-filename: joplin-desktop.sh
         commands:
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID 
-          - exec zypak-wrapper /app/joplin-desktop/@joplinapp-desktop "$@"
+          - exec zypak-wrapper /app/joplin-desktop/joplin "$@"
