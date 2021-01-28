@@ -1,12 +1,12 @@
 #!/bin/bash
 if [ ! -d joplin ];then
 	url=`grep -oE "https://[^\"\']*" ./*.yml | grep joplin`
-	wget $url -O joplin.tar && tar -xf joplin.tar
+	wget -nv $url -O joplin.tar && tar -xf joplin.tar
 	mv joplin-* joplin
 fi
 
 if [ ! -d joplin/git ];then
-    mkdir joplin/git
+	mkdir joplin/git
 	pushd joplin/git
 	git clone https://github.com/laurent22/node-emoji.git
 	git clone https://github.com/laurent22/uslug.git
@@ -15,12 +15,13 @@ if [ ! -d joplin/git ];then
 fi
 
 nodegen=./flatpak-builder-tools/node/flatpak-node-generator.py
-packages="app-cli app-desktop fork-htmlparser2 renderer turndown fork-sax lib tools turndown-plugin-gfm"
-
-for pack in $packages;do
-	echo "add $pack"
-	pattern="$pattern -R joplin/packages/$pack/package-lock.json"
+packages=`find joplin -type f -iname package-lock.json|grep -vE 'tests|Assets'`
+nopackages=`find joplin -type f -iname package-lock.json|grep -E 'tests|Assets'`
+echo '-----Not include-----'
+for pack in $nopackages; do echo $pack; done
+echo -e '--------------------\n'
+for pack in $packages; do
+	pattern="$pattern -R $pack"
 done
-pattern="$pattern -R joplin/git/uslug/package-lock.json"
-pattern="$pattern -R joplin/git/node-emoji/package-lock.json"
-$nodegen --xdg-layout -r -R joplin/package-lock.json $pattern npm joplin/package-lock.json
+
+$nodegen --xdg-layout -r $pattern npm joplin/package-lock.json
