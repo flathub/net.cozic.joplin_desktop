@@ -89,6 +89,9 @@ modules:
 
       - generated-sources.json
 
+      - type: patch
+        path: fork_htmlparser2-jest.patch
+
       - type: file
         path: net.cozic.joplin_desktop.desktop
 
