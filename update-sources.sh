@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ ! -f joplin.tar ];then
-	url=`grep -oE "https://[^\"\']*" ./*.yml | grep joplin`
+	url=`grep -ohE "https://[^\"\']*" ./*.yml | grep joplin`
 	wget -nv $url -O joplin.tar
 fi
 
