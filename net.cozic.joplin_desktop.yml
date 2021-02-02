@@ -52,6 +52,7 @@ modules:
     build-options:
       append-path: /usr/lib/sdk/node12/bin
       env:
+        HUSKY: '0'
         # Electron get cache dir, with downloaded electron by node-gen
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
         npm_config_cache: /run/build/joplin/flatpak-node/npm-cache
