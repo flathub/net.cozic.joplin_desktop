@@ -58,7 +58,7 @@ modules:
         npm_config_nodedir: /usr/lib/sdk/node12
         npm_config_offline: 'true'
         npm_config_no_save: 'true'
-        npm_config_loglevel: verbose
+        npm_config_loglevel: silly
     build-commands:
       - npm install
       # generateSha512.js require appimage build, need touch it
