@@ -1,0 +1,11 @@
+--- joplin/packages/app-desktop/package.json	2021-01-30 20:20:28.000000000 +0800
++++ joplin/packages/app-desktop/package_.json	2021-02-05 21:55:36.980195937 +0800
+@@ -34,7 +34,7 @@
+       "build/images/*"
+     ],
+     "afterAllArtifactBuild": "./generateSha512.js",
+-    "asar": true,
++    "asar": false,
+     "asarUnpack": "./node_modules/node-notifier/vendor/**",
+     "win": {
+       "rfc3161TimeStampServer": "http://timestamp.comodoca.com/rfc3161",
