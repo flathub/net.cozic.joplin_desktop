@@ -89,9 +89,6 @@ modules:
 
       - generated-sources.json
 
-      - type: patch
-        path: fork_htmlparser2-jest.patch
-
       - type: file
         path: net.cozic.joplin_desktop.desktop
 
@@ -103,3 +100,9 @@ modules:
         commands:
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
           - exec zypak-wrapper /app/joplin-desktop/joplin "$@"
+
+      - type: patch
+        path: fork_htmlparser2-jest.patch
+
+      - type: patch
+        path: no-asar.patch
