@@ -30,12 +30,16 @@ jobs:
           lat_ver=$(curl -s 'https://api.github.com/repos/laurent22/joplin/releases/latest' | jq -j .tag_name) 
           [ $lat_ver ] || exit 1
           echo -e "current: $cur_ver \nlatest : $lat_ver"
+
           if [[ "$cur_ver" != "$lat_ver" ]];then
               curl -sL "https://github.com/laurent22/joplin/archive/${lat_ver}.tar.gz" > joplin.tar
               lat_sha=$(sha256sum joplin.tar|head -c 64)
+              date_=$(date '+%Y-%m-%d')
+
+              sed -i "s/<releases>/<releases>\n    <release date=\"${date_}\" version=\"${lat_ver#v}\"\/>/g" net.cozic.joplin_desktop.metainfo.xml
               sed -i "s/${cur_ver}/${lat_ver}/g;s/${cur_sha}/${lat_sha}/g" net.cozic.joplin_desktop.yml
               ./update-sources.sh
-              git add net.cozic.joplin_desktop.yml generated-sources.json
+              git add net.cozic.joplin_desktop.metainfo.xml net.cozic.joplin_desktop.yml generated-sources.json
               git config user.name 'catsout'
               git config user.email 'outline941@live.com'
               git commit -m "auto: Update to $lat_ver"
