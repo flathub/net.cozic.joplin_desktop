@@ -5,12 +5,12 @@ Need manually add permission to allow access other location.
 
 You can do it with [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal), and configure permissions with nice gui.  
 Or use terminal command:
-```
+```sh
 flatpak override --filesystem=host net.cozic.joplin_desktop
 ```
 Note: You can also use multiple `filesystem` options to set `/media`,`/run/media`,`/mnt` as you need.
 
-## Use External editor with flatpak
+## Use external editor with flatpak
 There are two ways.
 ### xdg-open
 This will open a dialogue to select editor.  
@@ -26,4 +26,12 @@ Path:
 /bin/flatpak-spawn
 Arguments:
 --host <outside flatpak command>
+```
+
+#### example
+```text
+Path: 
+/bin/flatpak-spawn
+Arguments: 
+--host /bin/flatpak run --filesystem=xdg-config/joplin-desktop org.gnome.gedit
 ```
