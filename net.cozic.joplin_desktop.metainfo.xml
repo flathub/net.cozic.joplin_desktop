@@ -12,6 +12,7 @@
   <url type="homepage">https://joplinapp.org/</url>
   <url type="donation">https://joplinapp.org/donate/</url>
   <url type="faq">https://joplinapp.org/faq/</url>
+  <url type="sources">https://github.com/flathub/net.cozic.joplin_desktop</url>
   
   <recommends>
     <control>pointing</control>
