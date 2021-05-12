@@ -1,0 +1,11 @@
+--- joplin-1.8.5/packages/fork-sax/package-lock.json	2021-05-10 18:33:18.000000000 +0800
++++ joplin-1.8.5-p/packages/fork-sax/package-lock.json	2021-05-12 10:57:18.960118099 +0800
+@@ -174,7 +174,7 @@
+       }
+     },
+     "brace-expansion": {
+-      "version": "1.1.3",
++      "version": "1.1.8",
+       "resolved": "",
+       "dev": true,
+       "requires": {
