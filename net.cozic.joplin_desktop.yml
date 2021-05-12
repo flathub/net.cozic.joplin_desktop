@@ -102,7 +102,4 @@ modules:
           - exec zypak-wrapper /app/joplin-desktop/joplin "$@"
 
       - type: patch
-        path: fork_htmlparser2-jest.patch
-
-      - type: patch
         path: no-asar.patch
