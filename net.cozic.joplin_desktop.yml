@@ -103,6 +103,3 @@ modules:
 
       - type: patch
         path: no-asar.patch
-
-      - type: patch
-        path: fork-sax-brace-expansion.patch
