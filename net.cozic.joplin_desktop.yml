@@ -103,3 +103,6 @@ modules:
 
       - type: patch
         path: no-asar.patch
+
+      - type: patch
+        path: patch-fs-extra-to-6.0.1.patch
