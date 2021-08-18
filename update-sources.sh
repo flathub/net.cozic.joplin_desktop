@@ -26,5 +26,3 @@ for pack in $packages; do
 done
 
 $nodegen --xdg-layout -r $pattern npm joplin/package-lock.json
-
-sed -i "s/\(.url.: .\)git+ssh:/\1ssh:/g" generated-sources.json
