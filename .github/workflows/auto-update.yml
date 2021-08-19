@@ -18,6 +18,8 @@ jobs:
       - name: prepare
         run: |
           python3 -m pip install aiohttp
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
           git submodule update --init --recursive
         
       - name: check and update
@@ -40,8 +42,6 @@ jobs:
               sed -i "s/${cur_ver}/${lat_ver}/g;s/${cur_sha}/${lat_sha}/g" net.cozic.joplin_desktop.yml
               ./update-sources.sh
               git add net.cozic.joplin_desktop.metainfo.xml net.cozic.joplin_desktop.yml generated-sources.json
-              git config user.name 'catsout'
-              git config user.email 'outline941@live.com'
               git commit -m "auto: Update to $lat_ver"
               git push
           else
