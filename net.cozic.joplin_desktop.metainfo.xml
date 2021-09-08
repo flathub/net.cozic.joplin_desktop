@@ -37,7 +37,13 @@
   <launchable type="desktop-id">net.cozic.joplin_desktop.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://joplinapp.org/images/AllClients.jpg</image>
+      <image>https://joplinapp.org/images/home-top-img-2x.webp</image>
+    </screenshot>
+    <screenshot>
+      <image>https://joplinapp.org/images/multimedia-notes-img.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://joplinapp.org/images/save-web-img.png</image>
     </screenshot>
   </screenshots>
   <releases>
