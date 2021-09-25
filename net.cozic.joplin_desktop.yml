@@ -33,8 +33,8 @@ modules:
       - '*'
     sources:
       - type: archive
-        url: https://github.com/libvips/libvips/releases/download/v8.10.5/vips-8.10.5.tar.gz
-        sha256: a4eef2f5334ab6dbf133cd3c6d6394d5bdb3e76d5ea4d578b02e1bc3d9e1cfd8
+        url: https://github.com/libvips/libvips/releases/download/v8.11.4/vips-8.11.4.tar.gz
+        sha256: 5043f38828a0ff9f2275f9252f69e14f701ef11f55786cda8aa6ce2c4fbed2f7
 
   - name: rsync
     config-opts:
