@@ -39,6 +39,15 @@ modules:
         url: https://github.com/libvips/libvips/releases/download/v8.11.4/vips-8.11.4.tar.gz
         sha256: 5043f38828a0ff9f2275f9252f69e14f701ef11f55786cda8aa6ce2c4fbed2f7
 
+  - name: py2
+    cleanup:
+      - '*'
+    buildsystem: simple
+    build-commands:
+      - exit 0
+    modules:
+      - shared-modules/python2.7/python-2.7.json
+
   - name: rsync
     config-opts:
       - --disable-xxhash
