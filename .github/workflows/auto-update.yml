@@ -38,10 +38,10 @@ jobs:
               lat_sha=$(sha256sum joplin.tar|head -c 64)
               date_=$(date '+%Y-%m-%d')
 
-              sed -i "s/<releases>/<releases>\n    <release date=\"${date_}\" version=\"${lat_ver#v}\"\/>/g" net.cozic.joplin_desktop.metainfo.xml
+              sed -i "s/<releases>/<releases>\n    <release date=\"${date_}\" version=\"${lat_ver#v}\"\/>/g" joplin.appdata.xml
               sed -i "s/${cur_ver}/${lat_ver}/g;s/${cur_sha}/${lat_sha}/g" net.cozic.joplin_desktop.yml
               ./update-sources.sh
-              git add net.cozic.joplin_desktop.metainfo.xml net.cozic.joplin_desktop.yml generated-sources.json
+              git add joplin.appdata.xml net.cozic.joplin_desktop.yml generated-sources.json
               git commit -m "auto: Update to $lat_ver"
               git push
           else
