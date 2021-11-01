@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '21.08'
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node14
+  - org.freedesktop.Sdk.Extension.node16
 separate-locales: false
 rename-icon: joplin
 rename-desktop-file: joplin.desktop
@@ -53,18 +53,20 @@ modules:
   - name: joplin
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node14/bin
+      append-path: /usr/lib/sdk/node16/bin
       env:
         HUSKY: '0'
         # Electron get cache dir, with downloaded electron by node-gen
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
         npm_config_cache: /run/build/joplin/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node14
+        npm_config_nodedir: /usr/lib/sdk/node16
         npm_config_offline: 'true'
-        npm_config_save: 'false'
-        npm_config_loglevel: silly
+        #npm_config_save: 'false'
+        npm_config_audit: 'false'
+        #npm_config_optional: 'false'
+        npm_config_loglevel: verbose
     build-commands:
-      - npm install --no-optional
+      - npm install
       # generateSha512.js require appimage build, need touch it
       # If no it will cause electron-builder failed without error message even set debug!
       - mkdir -p packages/app-desktop/dist && touch packages/app-desktop/dist/AppImage
@@ -87,7 +89,7 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v2.5.10.tar.gz
+        url: https://github.com/laurent22/joplin/archive/v2.5.8.tar.gz
         sha256: 442270eff6dcfba20c0819507e2cfe29e22b37e09ae3134e43598eff494c4601
 
       - generated-sources.json
