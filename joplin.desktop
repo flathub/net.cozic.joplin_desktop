@@ -7,3 +7,4 @@ Icon=net.cozic.joplin_desktop
 StartupWMClass=Joplin
 Type=Application
 Categories=Office;
+MimeType=x-scheme-handler/joplin;
