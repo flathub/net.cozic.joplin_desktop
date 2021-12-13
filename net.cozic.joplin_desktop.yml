@@ -13,7 +13,8 @@ rename-appdata-file: joplin.appdata.xml
 command: joplin-desktop
 finish-args:
   - --socket=pulseaudio
-  - --socket=fallback-x11
+  - --socket=x11
+  - --socket=wayland
   - --device=dri
   - --share=ipc
   - --share=network
