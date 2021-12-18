@@ -38,8 +38,7 @@ jobs:
         run: |
           echo "::set-output name=updated::false"
           echo "::set-output name=branch::$(git branch --show-current)"
-          git branch | grep '* update-'
-          [ ! $? -eq 0 ] || echo "::set-output name=updated::true"
+          (git branch | grep '* update-') && echo "::set-output name=updated::true" || exit 0
 
       - name: echo result
         run: |
