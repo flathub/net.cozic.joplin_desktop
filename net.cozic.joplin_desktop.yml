@@ -9,7 +9,6 @@ sdk-extensions:
 separate-locales: false
 rename-icon: joplin
 rename-desktop-file: joplin.desktop
-rename-appdata-file: joplin.appdata.xml
 command: joplin-desktop
 finish-args:
   - --socket=pulseaudio
@@ -104,13 +103,19 @@ modules:
             "/app/share/icons/hicolor/${size}x${size}/apps/joplin.png";
         done
       - install -Dm755 joplin.desktop -t /app/share/applications
-      - install -Dm644 joplin.appdata.xml -t /app/share/metainfo
+      - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/metainfo
       - install -Dm755 joplin-desktop.sh /app/bin/joplin-desktop
 
     sources:
       - type: archive
         url: https://github.com/laurent22/joplin/archive/v2.5.12.tar.gz
         sha256: 984c6300e8d30f2a935084fa5b583ec59708041ee886a98e3add7ca75b46f424
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/laurent22/joplin/releases/latest
+          version-query: .tag_name 
+          url-query: '"https://github.com/laurent22/joplin/archive/" + $version + ".tar.gz"'
+
 
       - generated-sources.json
 
@@ -118,7 +123,7 @@ modules:
         path: joplin.desktop
 
       - type: file
-        path: joplin.appdata.xml
+        path: net.cozic.joplin_desktop.appdata.xml
 
       - type: script
         dest-filename: joplin-desktop.sh
