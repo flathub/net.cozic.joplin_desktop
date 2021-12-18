@@ -40,7 +40,6 @@ jobs:
           echo "::set-output name=branch::$(git branch --show-current)"
           git branch | grep '* update-'
           [ ! $? -eq 0 ] || echo "::set-output name=updated::true"
-          #git push --set-upstream origin $(git branch --show-current)
 
       - name: echo result
         run: |
