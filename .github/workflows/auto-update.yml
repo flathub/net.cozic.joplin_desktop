@@ -38,11 +38,13 @@ jobs:
         run: |
           python3 -m pip install aiohttp
           ./update-sources.sh
+          
+      - name: reset
+        run: |
           git checkout -- ${FLATPAK_ID}.yml *.xml
 
       - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
-        if: ${{ steps.is-updated.outputs.updated == 'true' }}
-        name: update and open pr 
+        name: recheck and open pr 
         env:
           GIT_AUTHOR_NAME: Flatpak External Data Checker
           GIT_COMMITTER_NAME: Flatpak External Data Checker
