@@ -13,16 +13,36 @@ env:
 jobs:
   flatpak-external-data-checker:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/flathub/flatpak-external-data-checker
-    outputs:
-      updated: ${{ steps.result.outputs.updated }}
-      branch: ${{ steps.result.outputs.branch }}
-
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
+        with:
+          args: --edit-only ${{ env.FLATPAK_ID }}.yml
+
+      - name: check updated
+        id: is-updated 
+        run: |
+          git status -s -uno
+          [ -z "$(git status -s -uno)" ] || echo "::set-output name=updated::true"
+
+      - uses: actions/setup-python@v2
+        if: ${{ steps.is-updated.outputs.updated == 'true' }}
+        with:
+          python-version: 3.9
+
+      - name: generate node sources
+        if: ${{ steps.is-updated.outputs.updated == 'true' }}
+        run: |
+          python3 -m pip install aiohttp
+          ./update-sources.sh
+          git checkout -- ${FLATPAK_ID}.yml *.xml
+
+      - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
+        if: ${{ steps.is-updated.outputs.updated == 'true' }}
+        name: update and open pr 
         env:
           GIT_AUTHOR_NAME: Flatpak External Data Checker
           GIT_COMMITTER_NAME: Flatpak External Data Checker
@@ -32,44 +52,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: --update --never-fork ${{ env.FLATPAK_ID }}.yml
-
-      - name: set output
-        id: result
-        run: |
-          echo "::set-output name=updated::false"
-          echo "::set-output name=branch::$(git branch --show-current)"
-          (git branch | grep '* update-') && echo "::set-output name=updated::true" || exit 0
-
-      - name: echo result
-        run: |
-          echo "updated: ${{ steps.result.outputs.updated }}"
-          echo "branch: ${{ steps.result.outputs.branch }}"
-
-  gen-node-sources:
-    runs-on: ubuntu-latest
-    needs: flatpak-external-data-checker
-    if: ${{ needs.flatpak-external-data-checker.outputs.updated == 'true' }}
-    env:
-      UPDATE_BRANCH: ${{ needs.flatpak-external-data-checker.outputs.branch }}
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ env.UPDATE_BRANCH }}
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-
-      - name: prepare
-        run: |
-          python3 -m pip install aiohttp
-          git config user.name $GIT_USER_NAME
-          git config user.email $GIT_USER_EMAIL
-          git submodule update --init --recursive
-        
-      - name: check and update
-        run: |
-          ver=$(cat $FLATPAK_ID.appdata.xml | grep release | grep -m1 -oP '(?<=version=")[^"]+')
-          ./update-sources.sh
-          git add generated-sources.json
-          git commit -m "generate sources for $ver"
-          git push

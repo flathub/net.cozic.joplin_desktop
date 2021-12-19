@@ -113,8 +113,9 @@ modules:
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases/latest
-          version-query: .tag_name 
-          url-query: '"https://github.com/laurent22/joplin/archive/" + $version + ".tar.gz"'
+          version-query: .tag_name | sub("^v"; "")
+          url-query: '"https://github.com/laurent22/joplin/archive/v" + $version +
+            ".tar.gz"'
 
       - generated-sources.json
 
