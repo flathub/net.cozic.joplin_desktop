@@ -12,6 +12,7 @@ env:
 
 jobs:
   flatpak-external-data-checker:
+    name: 'check update (${{ github.ref_name }})'
     runs-on: ubuntu-latest
     strategy:
       matrix:
