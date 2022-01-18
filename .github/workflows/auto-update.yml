@@ -15,8 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: true
 
       - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
         with:
@@ -37,7 +35,11 @@ jobs:
         if: ${{ steps.is-updated.outputs.updated == 'true' }}
         run: |
           python3 -m pip install aiohttp
-          ./update-sources.sh
+          git submodule update --init
+          ver=$(grep release net.cozic.joplin_desktop.appdata.xml | grep -m1 -oP '(?<=version=.)[^"]+')
+          curl https://raw.githubusercontent.com/laurent22/joplin/v${ver}/yarn.lock > yarn.lock
+          ./flatpak-builder-tools/node/flatpak-node-generator.py --xdg-layout yarn yarn.lock
+          rm yarn.lock
           
       - name: reset
         run: |
