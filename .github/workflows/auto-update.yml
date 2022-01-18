@@ -2,7 +2,7 @@ name: auto-update
 
 on:
   schedule:
-   - cron: "0 */4 * * *"
+   - cron: "0 */12 * * *"
   workflow_dispatch:
 
 env:
@@ -13,8 +13,23 @@ env:
 jobs:
   flatpak-external-data-checker:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch: ['master', 'beta', '']
+        isShedule:
+          - ${{ github.event_name == 'schedule' }}
+        exclude:
+          - branch: 'master'
+            isShedule: false
+          - branch: 'beta'
+            isShedule: false
+          - branch: ''
+            isShedule: true
+            
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ matrix.branch }}
 
       - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
         with:
@@ -27,12 +42,12 @@ jobs:
           [ -z "$(git status -s -uno)" ] || echo "::set-output name=updated::true"
 
       - uses: actions/setup-python@v2
-        if: ${{ steps.is-updated.outputs.updated == 'true' }}
+        if: steps.is-updated.outputs.updated
         with:
           python-version: 3.9
 
       - name: generate node sources
-        if: ${{ steps.is-updated.outputs.updated == 'true' }}
+        if: steps.is-updated.outputs.updated && matrix.branch == ''
         run: |
           python3 -m pip install aiohttp
           git submodule update --init
