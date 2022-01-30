@@ -18,6 +18,8 @@ finish-args:
   - --share=ipc
   - --share=network
   - --filesystem=home
+  - --persist=.config/joplin-desktop
+  - --persist=.config/joplindev-desktop
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=com.canonical.AppMenu.Registrar
