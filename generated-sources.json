@@ -13481,6 +13481,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/markdown-it-multimd-table/-/markdown-it-multimd-table-4.1.2.tgz",
+        "sha512": "c5e1184bc97a135fc48a7302be0bd6b84730dee8d05fd8d12be44173a8aaa85cd5488f418954a97ccdf50ff2f4c280df0b1ace8896a81184cb7b24e507f14181",
+        "dest-filename": "markdown-it-multimd-table-bWFya2Rvd24taXQtbXVsdGltZC10YWJsZUBucG06NC4xLjI=-8f4bff21c0.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/markdown-it-sub/-/markdown-it-sub-1.0.0.tgz",
         "sha1": "375fd6026eae7ddcb012497f6411195ea1e3afe8",
         "dest-filename": "markdown-it-sub-bWFya2Rvd24taXQtc3ViQG5wbToxLjAuMA==-8b5a71a11f.tgz",
@@ -13519,6 +13526,13 @@
         "url": "https://registry.npmjs.org/markdown-it/-/markdown-it-12.2.0.tgz",
         "sha512": "5a3c2cfae0ab55046a3a826fcdee070aa90a97502c4a1f7988501e403c27c9fc4cd3d762bc20525e50d1d6e4efc943f71abce99f846ef06782c583ccf2f90242",
         "dest-filename": "markdown-it-bWFya2Rvd24taXRAbnBtOjEyLjIuMA==-8e3d6646ed.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/markdown-it/-/markdown-it-12.3.2.tgz",
+        "sha512": "4dc84c7a66dfc5f355a4791bb6b89696d19673e9b7c6ccda443d0266ea7b185161cc8810ab121f9f77868f5c99a5fb9f9733ef7e4b7ad7507643f06c9356271a",
+        "dest-filename": "markdown-it-bWFya2Rvd24taXRAbnBtOjEyLjMuMg==-890555711c.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -13701,6 +13715,13 @@
         "url": "https://registry.npmjs.org/mermaid/-/mermaid-8.13.6.tgz",
         "sha512": "9b3f0c1ead08c8433bbcbca5ddf10e5a0a8c358ae8c134b5b3c4f1d840b5046953d0a1e9cb804516070a94b768af6bf148c4a55ead6c0194be6b29050bab9404",
         "dest-filename": "mermaid-bWVybWFpZEBucG06OC4xMy42-70c75c236b.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/mermaid/-/mermaid-8.13.9.tgz",
+        "sha512": "90c1faefac44a2649efe0cf13290f1f752fecfd2fef6207796fb4f140f1a78e3d134dadf777643bc3086167baa41a26f3d10b1b3731ed890da55534e663a23ae",
+        "dest-filename": "mermaid-bWVybWFpZEBucG06OC4xMy45-9b05ce1641.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
