@@ -87,8 +87,8 @@ modules:
         sha256: c3d5038094827c2fb0064a903b779bd716d7d5af756f8f8f5fc2d59c5dffcded
         x-checker-data:
           type: json
-          url: https://api.github.com/repos/laurent22/joplin/releases
-          version-query: .[0] | .tag_name | sub("^v"; "")
+          url: https://api.github.com/repos/laurent22/joplin/releases/latest
+          version-query: .tag_name | sub("^v"; "")
           url-query: '"https://github.com/laurent22/joplin/archive/v" + $version +
             ".tar.gz"'
 
