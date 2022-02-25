@@ -39,25 +39,6 @@ modules:
         url: https://github.com/libvips/libvips/releases/download/v8.11.4/vips-8.11.4.tar.gz
         sha256: 5043f38828a0ff9f2275f9252f69e14f701ef11f55786cda8aa6ce2c4fbed2f7
 
-  - name: python2
-    config-opts:
-      - --enable-shared
-      - --with-ensurepip=yes
-      - --with-system-expat
-      - --with-system-ffi
-      - --with-dbmliborder=gdbm
-      - --enable-unicode=ucs4
-    build-options:
-      no-debuginfo: true
-    post-install:
-      - chmod 644 $FLATPAK_DEST/lib/libpython2.7.so.1.0
-    cleanup:
-      - '*'
-    sources:
-      - type: archive
-        url: https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
-        sha256: b62c0e7937551d0cc02b8fd5cb0f544f9405bafc9a54d3808ed4594812edef43
-
   - name: rsync
     config-opts:
       - --disable-xxhash
@@ -74,25 +55,19 @@ modules:
     build-options:
       append-path: /usr/lib/sdk/node16/bin
       env:
-        HUSKY: '0'
-        # Electron get cache dir, with downloaded electron by node-gen
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
-        npm_config_cache: /run/build/joplin/flatpak-node/npm-cache
         npm_config_nodedir: /usr/lib/sdk/node16
-        npm_config_offline: 'true'
-        #npm_config_save: 'false'
-        npm_config_audit: 'false'
-        #npm_config_optional: 'false'
-        npm_config_loglevel: verbose
     build-commands:
-      - npm install
+      - rm -rf packages/app-clipper
+      - $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn2-setup.sh
+      - yarn install
       # generateSha512.js require appimage build, need touch it
       # If no it will cause electron-builder failed without error message even set debug!
       - mkdir -p packages/app-desktop/dist && touch packages/app-desktop/dist/AppImage
       - |
         . flatpak-node/electron-builder-arch-args.sh
         cd packages/app-desktop
-        npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS --dir --linux dir
+        yarn run dist $ELECTRON_BUILDER_ARCH_ARGS --config.asar=false --linux --dir
       - |
         cd packages/app-desktop
         cp -r dist/linux*unpacked /app/joplin-desktop
@@ -108,8 +83,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v2.6.10.tar.gz
-        sha256: 1994cf5a32cf72f60f0455ad8204ff1d5ebb70933ad50ade78431fa359b561c6
+        url: https://github.com/laurent22/joplin/archive/v2.7.13.tar.gz
+        sha256: cac517c776ea362871dd1250d56d1ae91d9d3ebcd45d2186bf97212c10b194c1
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases/latest
@@ -130,6 +105,3 @@ modules:
         commands:
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
           - exec zypak-wrapper /app/joplin-desktop/joplin "$@"
-
-      - type: patch
-        path: no-asar.patch

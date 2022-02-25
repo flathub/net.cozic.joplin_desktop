@@ -2,7 +2,7 @@ name: auto-update
 
 on:
   schedule:
-   - cron: "0 */4 * * *"
+   - cron: "0 */12 * * *"
   workflow_dispatch:
 
 env:
@@ -12,11 +12,25 @@ env:
 
 jobs:
   flatpak-external-data-checker:
+    name: 'check update (${{ github.ref_name }})'
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch: ['master', 'beta', '']
+        isShedule:
+          - ${{ github.event_name == 'schedule' }}
+        exclude:
+          - branch: 'master'
+            isShedule: false
+          - branch: 'beta'
+            isShedule: false
+          - branch: ''
+            isShedule: true
+            
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true
+          ref: ${{ matrix.branch }}
 
       - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
         with:
@@ -29,15 +43,19 @@ jobs:
           [ -z "$(git status -s -uno)" ] || echo "::set-output name=updated::true"
 
       - uses: actions/setup-python@v2
-        if: ${{ steps.is-updated.outputs.updated == 'true' }}
+        if: steps.is-updated.outputs.updated
         with:
           python-version: 3.9
 
       - name: generate node sources
-        if: ${{ steps.is-updated.outputs.updated == 'true' }}
+        if: steps.is-updated.outputs.updated
         run: |
           python3 -m pip install aiohttp
-          ./update-sources.sh
+          git submodule update --init
+          ver=$(grep release net.cozic.joplin_desktop.appdata.xml | grep -m1 -oP '(?<=version=.)[^"]+')
+          curl https://raw.githubusercontent.com/laurent22/joplin/v${ver}/yarn.lock > yarn.lock
+          ./flatpak-builder-tools/node/flatpak-node-generator.py --xdg-layout yarn yarn.lock
+          rm yarn.lock
           
       - name: reset
         run: |
