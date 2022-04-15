@@ -91,6 +91,7 @@ modules:
           version-query: .[0] | .tag_name | sub("^v"; "")
           url-query: '"https://github.com/laurent22/joplin/archive/v" + $version +
             ".tar.gz"'
+          timestamp-query: .[0] | .published_at
 
       - generated-sources.json
 
