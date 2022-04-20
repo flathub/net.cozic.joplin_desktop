@@ -1749,27 +1749,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@joplin/lib/-/lib-2.6.3.tgz",
-        "sha512": "f356b399f19208477019b4db1179841c3eb08fe245e96503681183fbbb9cffcd979387a1e02a5d5aa0394e1890e6e4f6853ae4c8868c9c1c3dda7faf1d62caf0",
-        "dest-filename": "lib-QGpvcGxpbi9saWJAbnBtOjIuNi4z-d020812168.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/@joplin/renderer/-/renderer-2.6.3.tgz",
-        "sha512": "3a9600ef640526368507b81c56d7a531161acd29269f107ed2e3266caf6a95df37103b146f487ff78fab40fc6aac84aede9b74eed353b473c0a00315a9b2fb10",
-        "dest-filename": "renderer-QGpvcGxpbi9yZW5kZXJlckBucG06Mi42LjM=-d72adc2509.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/@joplin/tools/-/tools-2.6.3.tgz",
-        "sha512": "3f78d75dcfc6d09551ed6141c2bfba5cc133c09620eb612bea42e51d2ec65e70c3da81a791812ded900d0d7ffcdfdd6f102b36610082edb9c2c75b99289802ae",
-        "dest-filename": "tools-QGpvcGxpbi90b29sc0BucG06Mi42LjM=-d9320b87b4.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.npmjs.org/@koa/cors/-/cors-3.1.0.tgz",
         "sha512": "eee9510b575afeb05aea48fa3f88366897e7113df3f147f7496bbad1c8dbb714c0e60f25c51757fc17763fdd846a01b0c0084035e370f13f227fdf6b265891e9",
         "dest-filename": "cors-QGtvYS9jb3JzQG5wbTozLjEuMA==-b6f18de404.tgz",
@@ -10499,13 +10478,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/highlight.js/-/highlight.js-11.3.1.tgz",
-        "sha512": "3d48424673e32ed88b1d9010e40fc3b7917c71665e3328fd291b000ac593f8e0fa38fd31e9da793a64f98ddc742601323f13d96483d0a513764dc8944fba1c73",
-        "dest-filename": "highlight.js-aGlnaGxpZ2h0LmpzQG5wbToxMS4zLjE=-9adaaa1fe5.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.npmjs.org/highlight.js/-/highlight.js-9.12.0.tgz",
         "sha1": "e6d9dbe57cbefe60751f02af336195870c90c01e",
         "dest-filename": "highlight.js-aGlnaGxpZ2h0LmpzQG5wbTo5LjEyLjA=-46b357bdaa.tgz",
@@ -13509,13 +13481,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/markdown-it-multimd-table/-/markdown-it-multimd-table-4.1.1.tgz",
-        "sha512": "148814de6eacc3ad174e8b8374177801264073b05ae4447962464e7c6c3eecf4bf56c4b31452d8282ac6230c53b7a2ec7285caebf4db308bbfe2425fca46e006",
-        "dest-filename": "markdown-it-multimd-table-bWFya2Rvd24taXQtbXVsdGltZC10YWJsZUBucG06NC4xLjE=-a92c9d43f8.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.npmjs.org/markdown-it-multimd-table/-/markdown-it-multimd-table-4.1.2.tgz",
         "sha512": "c5e1184bc97a135fc48a7302be0bd6b84730dee8d05fd8d12be44173a8aaa85cd5488f418954a97ccdf50ff2f4c280df0b1ace8896a81184cb7b24e507f14181",
         "dest-filename": "markdown-it-multimd-table-bWFya2Rvd24taXQtbXVsdGltZC10YWJsZUBucG06NC4xLjI=-8f4bff21c0.tgz",
@@ -13547,13 +13512,6 @@
         "url": "https://registry.npmjs.org/markdown-it/-/markdown-it-10.0.0.tgz",
         "sha512": "61638fd63ed46c3373f93ba660fd64a709cfd1a11aef5d5c263ac042bcddd145e56c97dce5a02ad05fcf6478e28a8a830b534a82f20c5fea3ef4193bcae33676",
         "dest-filename": "markdown-it-bWFya2Rvd24taXRAbnBtOjEwLjAuMA==-69f5ee640c.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/markdown-it/-/markdown-it-11.0.1.tgz",
-        "sha512": "694d53ce604a71634d62f1fda63ababbdd8130bf87cf78794bf4297d317089017ce76a4b4fef6a1ecae133d2588a990e5d9c469feb061fca32244f450fd59ecd",
-        "dest-filename": "markdown-it-bWFya2Rvd24taXRAbnBtOjExLjAuMQ==-05e9530454.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -13743,13 +13701,6 @@
         "url": "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz",
         "sha512": "f2aed51203095b827cb5c7d53f2f20d3d35c43065d6f0144aa17bf5999282338e7ff74c60f0b4e098b571b10373bcb4fce97330820e0bfe3f63f9cb4d1924e3a",
         "dest-filename": "merge2-bWVyZ2UyQG5wbToxLjQuMQ==-7268db63ed.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/mermaid/-/mermaid-8.13.6.tgz",
-        "sha512": "9b3f0c1ead08c8433bbcbca5ddf10e5a0a8c358ae8c134b5b3c4f1d840b5046953d0a1e9cb804516070a94b768af6bf148c4a55ead6c0194be6b29050bab9404",
-        "dest-filename": "mermaid-bWVybWFpZEBucG06OC4xMy42-70c75c236b.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -21390,12 +21341,6 @@
         "dest": "flatpak-node/yarn-mirror"
     },
     {
-        "type": "git",
-        "url": "https://github.com/laurent22/uslug.git",
-        "commit": "8c12bc7678eaefa752e673ea9cfbc0b1a14d7237",
-        "dest": "flatpak-node/tmp/uslug"
-    },
-    {
         "type": "inline",
         "contents": "\nmodule.exports = {\n  name: `flatpak-builder`,\n  factory: require => {\n    const { BaseCommand } = require(`@yarnpkg/cli`);\n    const { Configuration, structUtils, tgzUtils } = require('@yarnpkg/core')\n    const { ZipFS } = require('@yarnpkg/fslib');\n    const { getLibzipPromise } = require('@yarnpkg/libzip');\n    const fs = require('fs');\n\n    class convertToZipCommand extends BaseCommand {\n      static paths = [[`convertToZip`]];\n\n      async execute() {\n        const configuration = await Configuration.find(this.context.cwd,\n          this.context.plugins);\n        //const lockfile = configuration.get('lockfileFilename');\n        const cacheFolder = configuration.get('cacheFolder');\n        const compressionLevel = configuration.get(`compressionLevel`);\n\n        this.context.stdout.write(`yarn cacheFolder: ${cacheFolder}\\n`);\n\n        const convertToZip = async (tgz, target, opts) => {\n          const { compressionLevel, ...bufferOpts } = opts;\n          const zipFs = new ZipFS(target, {\n            create: true,\n            libzip: await getLibzipPromise(),\n            level: compressionLevel\n          });\n          const tgzBuffer = fs.readFileSync(tgz);\n          await tgzUtils.extractArchiveTo(tgzBuffer, zipFs,\n            bufferOpts);\n          zipFs.saveAndClose();\n        }\n\n        this.context.stdout.write(`converting cache to zip\\n`);\n\n        const files = fs.readdirSync(cacheFolder);\n        const tasks = []\n        for (const i in files) {\n          const file = `${files[i]}`;\n          const tgzFile = `${cacheFolder}/${file}`;\n\n          const match = file.match(/([^-]+)-(.{1,10}).tgz/);\n          if (!match) {\n            this.context.stdout.write(`ignore ${file}\\n`);\n            continue;\n          }\n          const resolution = Buffer.from(match[1], 'base64').toString();\n          const locator = structUtils.parseLocator(resolution, true);\n          const sha = match[2];\n          const filename =\n            `${structUtils.slugifyLocator(locator)}-${sha}.zip`;\n\n          const targetFile = `${cacheFolder}/${filename}`\n          tasks.push(async () => {\n            return await convertToZip(tgzFile, targetFile, {\n              compressionLevel: compressionLevel,\n              prefixPath: `node_modules/${structUtils.stringifyIdent(locator)}`,\n              stripComponents: 1,\n            });\n          });\n        }\n        while (tasks.length) {\n          await Promise.all(tasks.splice(0, 128).map(t => t()));\n        }\n        this.context.stdout.write(`converting finished\\n`);\n      }\n    }\n\n    return {\n      commands: [\n        convertToZipCommand\n      ],\n    };\n  }\n};\n",
         "dest-filename": "flatpak-builder.js",
@@ -21456,7 +21401,6 @@
     {
         "type": "shell",
         "commands": [
-            "cd flatpak-node/tmp/uslug;\nif [ -f \"yarn.lock\" ];then\nyarn set version classic --only-if-needed;yarn pack --filename ../../yarn-mirror/uslug-dXNsdWdAaHR0cHM6Ly9naXRodWIuY29tL2xhdXJlbnQyMi91c2x1Zy5naXQjY29tbWl0PThjMTJiYzc2NzhlYWVmYTc1MmU2NzNlYTljZmJjMGIxYTE0ZDcyMzc=-9ed2a3b18f.tgz;\nelif [ -f \"package-lock.json\" ];then\nfile=\"$(npm pack --silent)\";mv \"$file\" ../../yarn-mirror/uslug-dXNsdWdAaHR0cHM6Ly9naXRodWIuY29tL2xhdXJlbnQyMi91c2x1Zy5naXQjY29tbWl0PThjMTJiYzc2NzhlYWVmYTc1MmU2NzNlYTljZmJjMGIxYTE0ZDcyMzc=-9ed2a3b18f.tgz\nfi",
             "bash flatpak-node/setup_sdk_node_headers.sh"
         ]
     },
