@@ -3289,6 +3289,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/@types/yargs/-/yargs-16.0.3.tgz",
+        "sha512": "62515f4c64becea0a05ee5cd576eab3887844ce9179c64173ffa638cbf4fd203bf10ff634e673ba54061c7e8d5108c69ab8d515f7dc643b3770f33927d9a2095",
+        "dest-filename": "yargs-QHR5cGVzL3lhcmdzQG5wbToxNi4wLjM=-0968b06d2f.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/@types/yargs/-/yargs-16.0.4.tgz",
         "sha512": "4fc61cf70b7fe4b6c9c8268b8873d17896b4900a5c22027b067ef7e468c8b547e1d3c675a49beef1066a6fdb3e98cbca57a59441157b2b6478e986e33174d327",
         "dest-filename": "yargs-QHR5cGVzL3lhcmdzQG5wbToxNi4wLjQ=-caa21d2c95.tgz",
