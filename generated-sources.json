@@ -1413,6 +1413,307 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/cspell-bundled-dicts/-/cspell-bundled-dicts-5.20.0.tgz",
+        "sha512": "b423b7db1552b9ecb84e0f17b9ac81cdcac201fac05cbf09d4f798976ebefd9525e739002f802ec8bd027f87b63e9784a269d458fdb2e67a192cb6d478e2309f",
+        "dest-filename": "cspell-bundled-dicts-QGNzcGVsbC9jc3BlbGwtYnVuZGxlZC1kaWN0c0BucG06NS4yMC4w-1d63eb3605.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/cspell-pipe/-/cspell-pipe-5.20.0.tgz",
+        "sha512": "7461dfe176603e51aabe26130fee59c129378698b2c2cbae0ea9e83e8f52790d713e89fbb8554ab0c880033be118092405a28804d3ff9f03d4d1f798bcba0226",
+        "dest-filename": "cspell-pipe-QGNzcGVsbC9jc3BlbGwtcGlwZUBucG06NS4yMC4w-7608335dd8.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/cspell-types/-/cspell-types-5.20.0.tgz",
+        "sha512": "a74ebf1c02a06a5ab21877e7a3026f8cedd2407c6e3b329d8894d49548bcc750ab124ecf999107b8e465b7db55559e3a5dfdaa63df902de4ed6adb6558f277f4",
+        "dest-filename": "cspell-types-QGNzcGVsbC9jc3BlbGwtdHlwZXNAbnBtOjUuMjAuMA==-415cbf61a0.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-ada/-/dict-ada-2.0.0.tgz",
+        "sha512": "e207c91185d5c33e883762c1693e90a14578a6a691df98b4cf4bbd3baf38bcbb95733bcd2481dae2f35a484141afd77ac719dc532aacb603fd3fbdda8c98e1f4",
+        "dest-filename": "dict-ada-QGNzcGVsbC9kaWN0LWFkYUBucG06Mi4wLjA=-80dc84c210.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-aws/-/dict-aws-2.0.0.tgz",
+        "sha512": "34acfba4367ba708ff6f7de2ddfe162e90b5ace39432610dc1881fb7153e82253660178a336c196cc4d2108cecade979eabd149506267485653ff0789e755aa1",
+        "dest-filename": "dict-aws-QGNzcGVsbC9kaWN0LWF3c0BucG06Mi4wLjA=-594b2629be.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-bash/-/dict-bash-2.0.2.tgz",
+        "sha512": "01222023f2e65764d8ac3e26b64fa09b85e65124d1a263b246decd0d6c81a44c30fc079ac02d8ed8d1fa168b32513e9d514dc6697b76c2025137b47bf27d521a",
+        "dest-filename": "dict-bash-QGNzcGVsbC9kaWN0LWJhc2hAbnBtOjIuMC4y-ae42557bc2.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-companies/-/dict-companies-2.0.4.tgz",
+        "sha512": "9cb35575da3e8aee2afccbb4de79154cc9d23f1064a0bc99d0c8291c96560aac550136c1933a1934d363b1390986f91bad4216c9d7fc616e14e30618fa4ca1ed",
+        "dest-filename": "dict-companies-QGNzcGVsbC9kaWN0LWNvbXBhbmllc0BucG06Mi4wLjQ=-e7aa46de89.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-cpp/-/dict-cpp-2.0.3.tgz",
+        "sha512": "69646f2370905b63375de2690d57df22dc3ff67e21c6c37910fc3205ae8fa3a1270b165964b3aaa6279993824dcf8a47d3fc5b9ce5feb0c32e49e296afbd6bff",
+        "dest-filename": "dict-cpp-QGNzcGVsbC9kaWN0LWNwcEBucG06Mi4wLjM=-72bf071ef8.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-cryptocurrencies/-/dict-cryptocurrencies-2.0.0.tgz",
+        "sha512": "9d1132b2699f3a9ecbd98091014b9f41a8700f9fcfba7cdbe4067a7b2838cd46a675158780116985be7ff61d9f96dd6f81d51f85cea165c30bdb50a2ee25e368",
+        "dest-filename": "dict-cryptocurrencies-QGNzcGVsbC9kaWN0LWNyeXB0b2N1cnJlbmNpZXNAbnBtOjIuMC4w-2125b85571.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-csharp/-/dict-csharp-2.0.1.tgz",
+        "sha512": "67302bf9644fd8552d5c766d7e17bc7f78fdbcf8c7fb98b8e0772be49a9b5b19aa7221a84db5813d05f0bbdcbe27899b742ebd1d2591ad51a4349f2b424f294b",
+        "dest-filename": "dict-csharp-QGNzcGVsbC9kaWN0LWNzaGFycEBucG06Mi4wLjE=-aea44f296d.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-css/-/dict-css-2.0.0.tgz",
+        "sha512": "32b172b301479cf8781f4bba225578787cbe64252bac7cde2f5eb52f24cea82bda2a96d96af3203585f366a4c5f7169f3b488b8302ab97e1a4725bb5295060d1",
+        "dest-filename": "dict-css-QGNzcGVsbC9kaWN0LWNzc0BucG06Mi4wLjA=-6397d14f7f.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-dart/-/dict-dart-1.1.0.tgz",
+        "sha512": "6c1a9920d9be4558cc814ac0851cefff1c778dcddd908a8ed218a03dbb0afbadc802d30d63712242710ee1e6a96d4faa021caf20263d8594195f2e54c78a7e3f",
+        "dest-filename": "dict-dart-QGNzcGVsbC9kaWN0LWRhcnRAbnBtOjEuMS4w-fce2a3a7c2.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-django/-/dict-django-2.0.0.tgz",
+        "sha512": "1a425d26fe9c9b3aca726ab6fe8c535e3285e6ebfbd6be1e4ea9c59a03db3415b5b7e1b8558a7339fd10ad542b871d910b80dd5b95df7137fe892d05c473939b",
+        "dest-filename": "dict-django-QGNzcGVsbC9kaWN0LWRqYW5nb0BucG06Mi4wLjA=-d714423283.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-dotnet/-/dict-dotnet-2.0.1.tgz",
+        "sha512": "6f59f872b2515b459955ff46a7fe768ffb43b6362267737cd5f2327ea3e506b8ec87fe408af7c0ebdec36304369abf2780d5fb46ca91b583508de6a5035ac49d",
+        "dest-filename": "dict-dotnet-QGNzcGVsbC9kaWN0LWRvdG5ldEBucG06Mi4wLjE=-4aa27b315f.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-elixir/-/dict-elixir-2.0.1.tgz",
+        "sha512": "7934d3c59b7516a1a433bf34c850f1b061ef4db5aabe52bc60849271c2bc172ac1e942d6fae7e5425352e409d6837b96282e3c6fba50a2db7ea1d602b0f27e3b",
+        "dest-filename": "dict-elixir-QGNzcGVsbC9kaWN0LWVsaXhpckBucG06Mi4wLjE=-e9cfa4c060.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-en-gb/-/dict-en-gb-1.1.33.tgz",
+        "sha512": "b4a49251ff4124457e189400606c397bea2e8447b665713adb44bb04b29edd99a99e394d1bd26a96768186420cc4a9cd1642d8d813ff100473c37d406673afe2",
+        "dest-filename": "dict-en-gb-QGNzcGVsbC9kaWN0LWVuLWdiQG5wbToxLjEuMzM=-09a9e7a3ee.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-en_us/-/dict-en_us-2.2.3.tgz",
+        "sha512": "255f9a0f89b34dc1744f7b1907f3c2f750722eab4a231cf6d712d036ad1918cf9c2be11b30ba9f29362307bd9690b66daa48ec3e143606fe49b4894b0825c323",
+        "dest-filename": "dict-en_us-QGNzcGVsbC9kaWN0LWVuX3VzQG5wbToyLjIuMw==-6cc61610aa.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-filetypes/-/dict-filetypes-2.0.1.tgz",
+        "sha512": "6d0ecadd4ff784a3b696942339b7f4bde34ffe7e74aa4e4255ecd2c00a4c05c91ffec015bc34d1d51180bd876bfaf7509e4750ae4eb062685bb215e2d2c2c356",
+        "dest-filename": "dict-filetypes-QGNzcGVsbC9kaWN0LWZpbGV0eXBlc0BucG06Mi4wLjE=-d787ada0d0.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-fonts/-/dict-fonts-2.0.0.tgz",
+        "sha512": "0209136a5a617c33ed2853d89841310dc8fcad10a1f3ac653925dca3cb5e84e12461561b92c3a4f571f46151f7e11169cbddd805dda79d518b832195c1a81c3f",
+        "dest-filename": "dict-fonts-QGNzcGVsbC9kaWN0LWZvbnRzQG5wbToyLjAuMA==-d633649013.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-fullstack/-/dict-fullstack-2.0.5.tgz",
+        "sha512": "8e72e71d9e0770214d51f37eabb9b40940ed21234a6add096a17b51a09c0744c33728cea2818651808d5ee64163ed2a9a9f254eb525a9039ebc73a9e7c07d91f",
+        "dest-filename": "dict-fullstack-QGNzcGVsbC9kaWN0LWZ1bGxzdGFja0BucG06Mi4wLjU=-72e058aa89.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-git/-/dict-git-1.0.1.tgz",
+        "sha512": "464f9e4e87fff629c5d7596fc6690244afa03836ad037a9a8bc912012bfa386fc97cfbe98fb7d31c4af1feb7603f0fcb3930d469f9e84e34d89a3ec1d8c3905e",
+        "dest-filename": "dict-git-QGNzcGVsbC9kaWN0LWdpdEBucG06MS4wLjE=-352864bcb4.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-golang/-/dict-golang-2.0.0.tgz",
+        "sha512": "ad4799251fd2fd98c0b0e511b71b003bac434212f4233178e7c49c6a169e3aa7b4cd52f7b71eed08b8a40a04fdd8d58fb3704daa6b191aa6120db9ffd4ab1220",
+        "dest-filename": "dict-golang-QGNzcGVsbC9kaWN0LWdvbGFuZ0BucG06Mi4wLjA=-10ff051f77.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-haskell/-/dict-haskell-2.0.0.tgz",
+        "sha512": "7235f506bfa0496aad726243fc8307cf55283f7a5468a2082b2fc97e112cec036d46dea185f10a7bd765da44330e490ab78a57a25f9881d6312ffb1573f9cb81",
+        "dest-filename": "dict-haskell-QGNzcGVsbC9kaWN0LWhhc2tlbGxAbnBtOjIuMC4w-973f3c7908.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-html-symbol-entities/-/dict-html-symbol-entities-2.0.0.tgz",
+        "sha512": "ef54b9c0609eeddaba0becc60f0b0401ee66b2e6ff8abacb8ba484c5e1b5d5afc492903744a00485e0c63e4d21398e3ebce708147680a713a32d3b6041f6167c",
+        "dest-filename": "dict-html-symbol-entities-QGNzcGVsbC9kaWN0LWh0bWwtc3ltYm9sLWVudGl0aWVzQG5wbToyLjAuMA==-31ac7e82a3.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-html/-/dict-html-3.0.1.tgz",
+        "sha512": "b1bb8577e9d28e06eb19fe5e63049d745866d5e2cb78f296c87e999fc65bd0e383ac12b97b8bc69f5fec708fcc387e5ad88bcdb3c5bdc29f38b8c04525c419b7",
+        "dest-filename": "dict-html-QGNzcGVsbC9kaWN0LWh0bWxAbnBtOjMuMC4x-47efe0ac71.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-java/-/dict-java-2.0.0.tgz",
+        "sha512": "f5fe4b0c04e50225d11aac4bc60a9b38b950c6e316db370deed060c70b4dfb8bbdd2f334dd950e47f80a22e0d5ff2d19b808960488c0ef772393c0c9d7743578",
+        "dest-filename": "dict-java-QGNzcGVsbC9kaWN0LWphdmFAbnBtOjIuMC4w-fe97985bfd.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-latex/-/dict-latex-2.0.0.tgz",
+        "sha512": "1fa451c1b1e143d011a0ed51e7b483a81faafc9e635037559e475fba426403e1cd94906109c0eecc638826aafe181909603905de86d9dcb10e9369547d3f84ca",
+        "dest-filename": "dict-latex-QGNzcGVsbC9kaWN0LWxhdGV4QG5wbToyLjAuMA==-85c1ee0895.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-lorem-ipsum/-/dict-lorem-ipsum-2.0.0.tgz",
+        "sha512": "8caa2000ab6abe03cc95e2fabacca3deb6749bcb15511e9daeb0fec0c9d649f771d41994c93b188ae87f98f11f2c079b6981c42d648b406deb0d946f57d462aa",
+        "dest-filename": "dict-lorem-ipsum-QGNzcGVsbC9kaWN0LWxvcmVtLWlwc3VtQG5wbToyLjAuMA==-5d6f2ed5db.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-lua/-/dict-lua-2.0.0.tgz",
+        "sha512": "ed6504044b2948ab6cab5d3859d232b35f832ea031a493f3c3be0fcb54ee1377c8e46be5cde49991114fdb26b9e060769423b80b79aae0cf049e2b6989b5437f",
+        "dest-filename": "dict-lua-QGNzcGVsbC9kaWN0LWx1YUBucG06Mi4wLjA=-e2f6d58c99.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-node/-/dict-node-2.0.1.tgz",
+        "sha512": "ced056ce1bc8f9868c7a1202489eb97288618d0aa8cedc5ff6fad2dd87243a2546045bd431a15535d5fd925424beb2dc4bf3b8fb63f3a0678812499ff7d6a62c",
+        "dest-filename": "dict-node-QGNzcGVsbC9kaWN0LW5vZGVAbnBtOjIuMC4x-20eef1dd4e.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-npm/-/dict-npm-2.0.3.tgz",
+        "sha512": "2bfae7561987911de37dda3ba3c3f63432b231ca557bda54062143635cb60b462a6572310b3d5fe6139b9bf871c8ef956e7e552d4dd3294e5f679cf72eca573a",
+        "dest-filename": "dict-npm-QGNzcGVsbC9kaWN0LW5wbUBucG06Mi4wLjM=-4e9a8e13ab.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-php/-/dict-php-2.0.0.tgz",
+        "sha512": "dbd5a053bede4cef7ce4bbcc1f03e2d697297e8a5f0967d375f7c3caac9ad0921f39268552b9582b318f904e26471733d86de15ec68cd1246f04d74847011d52",
+        "dest-filename": "dict-php-QGNzcGVsbC9kaWN0LXBocEBucG06Mi4wLjA=-7aee934770.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-powershell/-/dict-powershell-2.0.0.tgz",
+        "sha512": "eaebc484b886986deef531643354d8724cba68bf5893b4a4dca270a13601690258d8aaaba6b83242d5bacb1230f68539d9544796adca2af48003d436ebe48891",
+        "dest-filename": "dict-powershell-QGNzcGVsbC9kaWN0LXBvd2Vyc2hlbGxAbnBtOjIuMC4w-4fe805d7c9.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-public-licenses/-/dict-public-licenses-1.0.4.tgz",
+        "sha512": "878c542df5440d4796cafa7538ed7da5c183a96701110ed618ca774011f26298ec6a6973b326188c245263666fa4cef0aee0e6cb049116644727ffae3454fb9c",
+        "dest-filename": "dict-public-licenses-QGNzcGVsbC9kaWN0LXB1YmxpYy1saWNlbnNlc0BucG06MS4wLjQ=-fdd0418b39.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-python/-/dict-python-3.0.3.tgz",
+        "sha512": "32de35e4a7334dfaa62ef29381e57c173333a66b3d6da4d2d0fe477d42d35be53142d65eae8be263244cf5324f24a252a08d084aed068880e0998955efe60fa2",
+        "dest-filename": "dict-python-QGNzcGVsbC9kaWN0LXB5dGhvbkBucG06My4wLjM=-8ee074cf50.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-r/-/dict-r-1.0.2.tgz",
+        "sha512": "469ddde2c803ea2cd6f535b9c952370ffff71d397da0e181bb34ef5d17681e4b153d1bf322eda5895863f0c9d0dd72117b929ce8884b0409ba8b3b95d81a46c1",
+        "dest-filename": "dict-r-QGNzcGVsbC9kaWN0LXJAbnBtOjEuMC4y-b5c0425d49.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-ruby/-/dict-ruby-2.0.1.tgz",
+        "sha512": "a86aa161f15ea0139ab21bff9742a3e68e22972bdfab4b3eb7eaf7da3b8f3a43a76c7cfe873c67268dad30c83f2ff51d8d557b63ca2f8382c3042fec795acc61",
+        "dest-filename": "dict-ruby-QGNzcGVsbC9kaWN0LXJ1YnlAbnBtOjIuMC4x-eaa1910150.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-rust/-/dict-rust-2.0.0.tgz",
+        "sha512": "1169508af4ca5cc5374d372afcf8ba28f2934000e49dab10ef4d14af144fcf1870438b0a559f3c183bba559265b1b154cfc564a36f3d292eb08e2a31ffb5a999",
+        "dest-filename": "dict-rust-QGNzcGVsbC9kaWN0LXJ1c3RAbnBtOjIuMC4w-1ae8f6a8cb.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-scala/-/dict-scala-2.0.0.tgz",
+        "sha512": "314c00d982a9a9a40e491e15d7f095191364f088b991fe88f0287ee3f0614594505eec166e2db5ac345858fa9d416a6ced537301b6cc03e3d00d6b03e58637f2",
+        "dest-filename": "dict-scala-QGNzcGVsbC9kaWN0LXNjYWxhQG5wbToyLjAuMA==-3f23ba4651.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-software-terms/-/dict-software-terms-2.1.5.tgz",
+        "sha512": "ca55d60ac389958bae71a3281da1d02d5681f07783aec099e366b78eb4c2fe2e85fd217d23ee2d060e25322bdde30df56d706020b75b22f547b56cc97fee66d0",
+        "dest-filename": "dict-software-terms-QGNzcGVsbC9kaWN0LXNvZnR3YXJlLXRlcm1zQG5wbToyLjEuNQ==-751ac69d95.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-swift/-/dict-swift-1.0.2.tgz",
+        "sha512": "22b31c44eec0601daa539723e2db59c846ddd380d134e1ba2216b5d3aa861a69f83f4f7a9be63b94e9d22c9c7fad96c3fdc013dd9ffb8b8eb92ebd49f778fbca",
+        "dest-filename": "dict-swift-QGNzcGVsbC9kaWN0LXN3aWZ0QG5wbToxLjAuMg==-afbf6da336.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-typescript/-/dict-typescript-2.0.0.tgz",
+        "sha512": "58505a871b270f6cb83acd78b44e59c61df51a09f80f318e02edd4a31625d652cbc5ab33c78447ecb980785bb39f249ba2268179105ba5f24e8d003bf7a3ba55",
+        "dest-filename": "dict-typescript-QGNzcGVsbC9kaWN0LXR5cGVzY3JpcHRAbnBtOjIuMC4w-00a862d11d.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@cspell/dict-vue/-/dict-vue-2.0.2.tgz",
+        "sha512": "fcc074452d069f4d6ce298268f2d05bec2dfaf745132b469844baf4d1b1eacd70cf1756da08540b6b8e283f1a0d033f00eb37c0a59b42f58fb8906b2e92f03d2",
+        "dest-filename": "dict-vue-QGNzcGVsbC9kaWN0LXZ1ZUBucG06Mi4wLjI=-fa135ac967.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/@develar/schema-utils/-/schema-utils-2.6.5.tgz",
         "sha512": "d1ca783ec590ffd6afa9354c0ad67e1a2ae2908037ea292f8ed1f0794e3f8fcc8bb6039b234f8950f858152720c25b5ebde181d6bb770a6f1484dd385dac838a",
         "dest-filename": "schema-utils-QGRldmVsYXIvc2NoZW1hLXV0aWxzQG5wbToyLjYuNQ==-e1c3771af7.tgz",
@@ -2186,13 +2487,6 @@
         "url": "https://registry.npmjs.org/@malept/flatpak-bundler/-/flatpak-bundler-0.4.0.tgz",
         "sha512": "f503ad35f7dc385fdcd6c78c0839e37246f747d587706df8b64cbe147a4d28a096d3073fb1c60bc0cb4efa9b721947cc5b4fdbfe7e2a46200b95a14773d3a3ed",
         "dest-filename": "flatpak-bundler-QG1hbGVwdC9mbGF0cGFrLWJ1bmRsZXJAbnBtOjAuNC4w-12527e42c2.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz",
-        "sha512": "08c18a8b6f0217eaa56d7876ea10dee8dc4277b6a6a9e03312a9d2e881de3ba2e868ac8cfe7f97c371d3d4239dabc72e8a839d94a76a9ff8429aa3d438c3b2c2",
-        "dest-filename": "node-pre-gyp-QG1hcGJveC9ub2RlLXByZS1neXBAbnBtOjEuMC44-29a38f3957.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -4185,6 +4479,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/array-timsort/-/array-timsort-1.0.3.tgz",
+        "sha512": "ffedc644bedd0c01847cce93b1e424fd4fa68b5f1353632cf48dd494b754321cf685bbc635329d8fdc678b05df52a818847c51c74fbc5272a4be5370554f9c59",
+        "dest-filename": "array-timsort-YXJyYXktdGltc29ydEBucG06MS4wLjM=-fd4b5b0911.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/array-union/-/array-union-1.0.2.tgz",
         "sha1": "9a34410e4f4e3da23dea375be5be70f24778ec39",
         "dest-filename": "array-union-YXJyYXktdW5pb25AbnBtOjEuMC4y-82cec6421b.tgz",
@@ -4955,6 +5256,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.1.tgz",
+        "sha512": "5e7008bd0f1e33e902e9a50bc7ac2e422c15b27cec8bd7775b1cd5dc5a564c6035f45eb6d64c1d6ec01c14a5e02941d95accbe998ea22f5b074f1584142cad0c",
+        "dest-filename": "brace-expansion-YnJhY2UtZXhwYW5zaW9uQG5wbToyLjAuMQ==-a61e7cd2e8.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/braces/-/braces-1.8.5.tgz",
         "sha1": "ba77962e12dff969d6b76711e914b737857bf6a7",
         "dest-filename": "braces-YnJhY2VzQG5wbToxLjguNQ==-9ea4fb6af8.tgz",
@@ -5459,13 +5767,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/canvas/-/canvas-2.9.0.tgz",
-        "sha512": "d25f7783bbb1a7bacccabec7f97450dbc037b9dd1d2885132049147b50f1878ae351837b07ddfe4a30b7af53c3280d7cc5c40df3b3851a0527cb0ecb4a034b49",
-        "dest-filename": "canvas-Y2FudmFzQG5wbToyLjkuMA==-376ccd4734.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.npmjs.org/capital-case/-/capital-case-1.0.4.tgz",
         "sha512": "76cdfb5bc0b2b478309e11864e2f3ca5c3f2475e6aa0d90ea58c2630c7e75aaa9680449aa4baaf0f1ea1b858d0e6fa964a7d99d3ad7bdd7340ecbb4c39e521d4",
         "dest-filename": "capital-case-Y2FwaXRhbC1jYXNlQG5wbToxLjAuNA==-41fa8fa87f.tgz",
@@ -5686,6 +5987,13 @@
         "url": "https://registry.npmjs.org/clean-yaml-object/-/clean-yaml-object-0.1.0.tgz",
         "sha1": "63fb110dc2ce1a84dc21f6d9334876d010ae8b68",
         "dest-filename": "clean-yaml-object-Y2xlYW4teWFtbC1vYmplY3RAbnBtOjAuMS4w-0374ad2f1f.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/clear-module/-/clear-module-4.1.2.tgz",
+        "sha512": "2d6031cc7a9d1ec01994f944c89d8fa33e8022cdfce263dea8b542aeeda9d01acff46fe4546ba13726580a52cee9c5e59ee263cc2f31b6c248b8c8caa8b5e803",
+        "dest-filename": "clear-module-Y2xlYXItbW9kdWxlQG5wbTo0LjEuMg==-4931f0c461.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -6089,6 +6397,20 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/commander/-/commander-9.2.0.tgz",
+        "sha512": "7b68b8c003508925e09eb06521ab721ed3f5a1d7d4a7405b5796399c419bc6d22b4ad9043800330948abbcb04d5c72ebee4c0bbc997a57ee15dd757dc7b59df7",
+        "dest-filename": "commander-Y29tbWFuZGVyQG5wbTo5LjIuMA==-7c82e4cd96.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/comment-json/-/comment-json-4.2.2.tgz",
+        "sha512": "1fc4fe925de765eb19bb8d733b6a0d5c8256a2335e2b7987c422ebb0136ee9f7a4b015ec81bf8fb58cf975a3f93fce80d05deccf7f38d0a5587a1af4e1e9c849",
+        "dest-filename": "comment-json-Y29tbWVudC1qc29uQG5wbTo0LjIuMg==-eb77124bf0.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/commondir/-/commondir-1.0.1.tgz",
         "sha1": "ddd800da0c66127393cca5950ea968a3aaf1253b",
         "dest-filename": "commondir-Y29tbW9uZGlyQG5wbToxLjAuMQ==-59715f2fc4.tgz",
@@ -6383,6 +6705,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/cosmiconfig/-/cosmiconfig-7.0.1.tgz",
+        "sha512": "6b56163545761f01a2981edd536b35c1432eacd2a3a71eb41f1041eb150cf117bedacd60d4821f26f151d3f88217e5c7744d06313293b8b477d9441f7f84c4c9",
+        "dest-filename": "cosmiconfig-Y29zbWljb25maWdAbnBtOjcuMC4x-4be63e7117.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/countable/-/countable-3.0.1.tgz",
         "sha512": "773fec762f911691c928c7a7e51001f442a908a77fab958c7f11b749b75b4373da938f9210f9838555991741934c7c23aa347eec39a2647cd9885278a9e0339a",
         "dest-filename": "countable-Y291bnRhYmxlQG5wbTozLjAuMQ==-677aec2c11.tgz",
@@ -6519,6 +6848,48 @@
         "url": "https://registry.npmjs.org/crypto-random-string/-/crypto-random-string-2.0.0.tgz",
         "sha512": "bf5a65203df2f6bfe53e1be2275c2b5e92dec94206019d921cd61311aa66efff00f672cfa32bd5a7744afc43c5aa7e641339f25a061936c46d6182166ee1bc28",
         "dest-filename": "crypto-random-string-Y3J5cHRvLXJhbmRvbS1zdHJpbmdAbnBtOjIuMC4w-0283879f55.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/cspell-gitignore/-/cspell-gitignore-5.20.0.tgz",
+        "sha512": "a16ce81dc6a2757ea314e37abf0887ddc0351ea90699ac03d435adf9f3d62ab79af7f4ae4dcbc5c66f916ea3b80e3c17100308733c8f396a3e48233455b702ac",
+        "dest-filename": "cspell-gitignore-Y3NwZWxsLWdpdGlnbm9yZUBucG06NS4yMC4w-c000f3360d.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/cspell-glob/-/cspell-glob-5.20.0.tgz",
+        "sha512": "7b2a3c3581f819aa47c5f8a531aaf0bdfd472321964f7816b85958926423615c772a3ce67d1d58d71f52d3af309b08e9f64282bbd4fa563ef51061bef51e7d2f",
+        "dest-filename": "cspell-glob-Y3NwZWxsLWdsb2JAbnBtOjUuMjAuMA==-06aba118fc.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/cspell-io/-/cspell-io-5.20.0.tgz",
+        "sha512": "c20aaaa55221b4c87effedd87c7b7c7037eb0fb38b17ec50952b655118fc009c04274c6ed7acf223d4b9cdc8a0fbcdfed10cb3b8c7717d988c81b750c5612f3a",
+        "dest-filename": "cspell-io-Y3NwZWxsLWlvQG5wbTo1LjIwLjA=-6a50954d8b.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/cspell-lib/-/cspell-lib-5.20.0.tgz",
+        "sha512": "15cefedc4c45da9352f01b104d748c92147a2136e9ca23107fecb8647fda066974f7e3ba96b6e3e23dad271fe84785ef0c403cb90915ff994c19d53ea2d0b529",
+        "dest-filename": "cspell-lib-Y3NwZWxsLWxpYkBucG06NS4yMC4w-b07c48f219.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-5.20.0.tgz",
+        "sha512": "113f7974987e389d383dd2c8f5d2aa01af9d0eee3bb57714c4247ab8a899faa675f2fd5997df3ab3cabcf66f5cfb1a68ecb7aa874ac5e99b30dccf428f2e8987",
+        "dest-filename": "cspell-trie-lib-Y3NwZWxsLXRyaWUtbGliQG5wbTo1LjIwLjA=-6c540750d3.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/cspell/-/cspell-5.20.0.tgz",
+        "sha512": "957012d786657c97ce237160a0001fca5fc095307c4fe6b21e62ab1f1c2e45152f3782014f8cbc77bb5d8d60e3eff6ec338bb93395ab9405e0eaf5c7dc58396c",
+        "dest-filename": "cspell-Y3NwZWxsQG5wbTo1LjIwLjA=-24b1af527b.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -8980,6 +9351,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/fast-equals/-/fast-equals-3.0.2.tgz",
+        "sha512": "898d1f0265bb7f3c47a76d950912e93a059bb16b05f832568b58e173cc3e5469495224be29c19957603cb7e43da13430846dcbd56f0bbbfa1edd9c8e3dd8598f",
+        "dest-filename": "fast-equals-ZmFzdC1lcXVhbHNAbnBtOjMuMC4y-ff09975232.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/fast-glob/-/fast-glob-2.2.7.tgz",
         "sha512": "8352ae4301ce64098e64cb81b477710ed8eef93d914fc8e0082f5a00db1ba5d8830d34a78e07ee56c20134a6d4789237a0a31113171f343b499783a16df7ccb3",
         "dest-filename": "fast-glob-ZmFzdC1nbG9iQG5wbToyLjIuNw==-304ccff1d4.tgz",
@@ -9256,6 +9634,13 @@
         "url": "https://registry.npmjs.org/find-up/-/find-up-4.1.0.tgz",
         "sha512": "3e93b001d43f6255d0daf8fc6b787c222a43b98462df071e550406616c4d20d71cab8d009f0ec196c11708c6edd59b7e38b03a16af6cb88a48583d0eb2721297",
         "dest-filename": "find-up-ZmluZC11cEBucG06NC4xLjA=-4c172680e8.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/find-up/-/find-up-5.0.0.tgz",
+        "sha512": "efcfcf5d3d7094b2c3813cc3b3bb23abd873cf4bd70fece7fbbc32a447b87d74310a6766a9f1ac10f4319a2092408dda8c557dd5b552b2f36dac94625ba9c69e",
+        "dest-filename": "find-up-ZmluZC11cEBucG06NS4wLjA=-07955e3573.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -9554,6 +9939,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz",
+        "sha512": "a115c0a6ae78113463e1e3221731a71d61b2fb3a39adab9d8eec4dd1bf07eecfd1536a16d16becc7d3b400244dfe446af44f15bbf45eb24181e68de38be1731d",
+        "dest-filename": "fs-extra-ZnMtZXh0cmFAbnBtOjEwLjEuMA==-dc94ab3709.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/fs-extra/-/fs-extra-4.0.3.tgz",
         "sha512": "abaadb743775a369809d0ade3bb6000c8c5ffd6871e001c18917fa77efdc553f21e38b2cfa51e0c5fd457a672a0e742df57ddcb7831c1ebf893069584ac2bb0a",
         "dest-filename": "fs-extra-ZnMtZXh0cmFAbnBtOjQuMC4z-c5ae3c7043.tgz",
@@ -9687,13 +10079,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/gauge/-/gauge-3.0.2.tgz",
-        "sha512": "fb927a312ff95e4b02b97abefae151b2751decebeed577a76deb88b8d449c585a38106cfb85853d78940bec59fa9f0269f096e7f53b0323cf7f478df2cf722d1",
-        "dest-filename": "gauge-Z2F1Z2VAbnBtOjMuMC4y-81296c00c7.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.npmjs.org/gauge/-/gauge-4.0.0.tgz",
         "sha512": "17cb14e39c90a63423c4a926d5438085fd14fced1a16dfff165ee1b2b355b68fa96ad3078ecedd3c8f6614e19429b86b80a9b44b71235b7b1c305b909964913b",
         "dest-filename": "gauge-Z2F1Z2VAbnBtOjQuMC4w-637b34c84f.tgz",
@@ -9718,6 +10103,13 @@
         "url": "https://registry.npmjs.org/genfun/-/genfun-5.0.0.tgz",
         "sha512": "2860ce01159581aefeae7077cfd49dd8b7adc79d79a307e4d214b11c6baa8c035bd4cfb1d9b1991aa1cb8a8ccfb1831d3363ae6de3278bf1e9c268eaeaa21484",
         "dest-filename": "genfun-Z2VuZnVuQG5wbTo1LjAuMA==-fb5034e1cf.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/gensequence/-/gensequence-3.1.1.tgz",
+        "sha512": "cacde1d218ad791c2663a06cbd2b6d3e69210b4bc44073c976e00d051b47fdd9433d9d140486ff757cbcd0871c917cae43a2ca83e3e5a11aaf18447d212ec5ee",
+        "dest-filename": "gensequence-Z2Vuc2VxdWVuY2VAbnBtOjMuMS4x-0cf9754b16.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -9823,6 +10215,13 @@
         "url": "https://registry.npmjs.org/get-stdin/-/get-stdin-7.0.0.tgz",
         "sha512": "cd129ccb0beb5e55ec034bf48bd228e0a0d1680c3bf9ad59a6347097d5a8c7c3c59550821eb6bb13d73892a5c2a0233d9d1e6d0646934d9441a029bad1b16a4d",
         "dest-filename": "get-stdin-Z2V0LXN0ZGluQG5wbTo3LjAuMA==-a24ab2cf8e.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/get-stdin/-/get-stdin-8.0.0.tgz",
+        "sha512": "b18db6680eb1721033a6b8f2aa648442fe146c003344dd0bd9d401d0d94de5a7134caf43a27ea78687377806d49e966208034031f77ffb8d2455d29f17282886",
+        "dest-filename": "get-stdin-Z2V0LXN0ZGluQG5wbTo4LjAuMA==-40128b6cd2.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -10058,9 +10457,23 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/glob/-/glob-8.0.1.tgz",
+        "sha512": "705ec5619678ed8ce60aeedd0f2e74c524517cedc4ad17eb5ee2d970d22eca2244728d174ab1adba2946d7d2f9c69dcd7304f1ec69fe5fa4efddf9ac50f4dba3",
+        "dest-filename": "glob-Z2xvYkBucG06OC4wLjE=-7ac782f3ef.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/global-agent/-/global-agent-3.0.0.tgz",
         "sha512": "3d3e9745e27e0f4ec9bc6a3140c913eaa8e2fe354d7d7fe1dfae171d9396791cf2eb8b1216bfb1279397ecb2376f830f43374be07f18f0cd31ccfa6c54cc00f1",
         "dest-filename": "global-agent-Z2xvYmFsLWFnZW50QG5wbTozLjAuMA==-75074d8073.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/global-dirs/-/global-dirs-0.1.1.tgz",
+        "sha1": "b319c0dd4607f353f3be9cca4c72fc148c49f445",
+        "dest-filename": "global-dirs-Z2xvYmFsLWRpcnNAbnBtOjAuMS4x-10624f5a8d.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -10334,6 +10747,13 @@
         "url": "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz",
         "sha512": "1329094ff4352a34d672da698080207d23b4b4a56e6548e180caf5ee4a93ba6325e807efdc421295e53ba99533a170c54c01d30c2e0d3a81bf67153712f94c3d",
         "dest-filename": "has-flag-aGFzLWZsYWdAbnBtOjQuMC4w-261a135703.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/has-own-prop/-/has-own-prop-2.0.0.tgz",
+        "sha512": "3ead21fa1bec566e9d0c46bcc7cd869cb4981ceccd0ededfd1d7456b716a710960cc48a9b4fa8bf97ace24d6af8cecd262261622b81e5586201a52e69f1c2295",
+        "dest-filename": "has-own-prop-aGFzLW93bi1wcm9wQG5wbToyLjAuMA==-ca6336e85e.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -12970,6 +13390,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/locate-path/-/locate-path-6.0.0.tgz",
+        "sha512": "88f64ae9e6236f146edee078fd667712c10830914ca80a28a65dd1fb3baad148dc026fcc3ba282c1e0e03df3f77a54f3b6828fdcab67547c539f63470520d553",
+        "dest-filename": "locate-path-bG9jYXRlLXBhdGhAbnBtOjYuMC4w-72eb661788.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz",
         "sha512": "98a9c2f9027da56573bfe0b8fd4deb46c1daa457c7bd0168141f767b9db17b218c717ebf3a5225efc8ded6ef2f78fcd8652924a2030f276ca3c71b1bf3d731cb",
         "dest-filename": "lodash-es-bG9kYXNoLWVzQG5wbTo0LjE3LjIx-05cbffad6e.tgz",
@@ -13873,6 +14300,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/micromatch/-/micromatch-4.0.5.tgz",
+        "sha512": "0cccbe1117045b6abc6763e8f96357bb0ddce586944858c03b91ac26a7c497b523bed22e14a3ba66b2af708b5dcbdf1dc05236375b60df334874a6904fe68d74",
+        "dest-filename": "micromatch-bWljcm9tYXRjaEBucG06NC4wLjU=-02a17b671c.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/miller-rabin/-/miller-rabin-4.0.1.tgz",
         "sha512": "d75e5f2e1bd956a5b01cf6c29729edc4455f5437e5f432cb4ee26fab78363bf3b18bc022368b801ef0d2cc74b4be250973e579be6ddeabdd57c2a9fd769e2344",
         "dest-filename": "miller-rabin-bWlsbGVyLXJhYmluQG5wbTo0LjAuMQ==-00cd1ab838.tgz",
@@ -13974,6 +14408,13 @@
         "url": "https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz",
         "sha512": "c891d5404872a8f2d44e0b7d07cdcf5eee96debc7832fbc7bd252f4e8a20a70a060ce510fb20eb4741d1a2dfb23827423bbbb8857de959fb7a91604172a87450",
         "dest-filename": "minimatch-bWluaW1hdGNoQG5wbTozLjAuNA==-66ac295f8a.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/minimatch/-/minimatch-5.0.1.tgz",
+        "sha512": "9cb0f12054728436e5cf7a8cbaaf92a116440f8fa6889fc6fad743ae39249119e302c05ec5e1a98232c44346e5272eeb1e14766fddeb8506384afc96bbdbf4de",
+        "dest-filename": "minimatch-bWluaW1hdGNoQG5wbTo1LjAuMQ==-b34b98463d.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -14503,13 +14944,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz",
-        "sha512": "66330f1447d5c798fecb6c85df92b3c79b05ee40f3c6e0e3eb3887e0515b3a9f3bcca0d9371f321312486f4e4e185e0d96df481c520c064465e3555dbdc35d6d",
-        "dest-filename": "node-fetch-bm9kZS1mZXRjaEBucG06Mi42Ljc=-8d816ffd1e.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.3.0.tgz",
         "sha512": "8968d766f99ba2ad236b5a541942d005ec66c6af02578c41857ed50ce4db2fb651e053a8c3063f54eb51c4137fc8ac66746a08a788f9cac353e2edd2da90d0dd",
         "dest-filename": "node-gyp-build-bm9kZS1neXAtYnVpbGRAbnBtOjQuMy4w-1ecab16d9f.tgz",
@@ -14786,13 +15220,6 @@
         "url": "https://registry.npmjs.org/npmlog/-/npmlog-4.1.2.tgz",
         "sha512": "dae52a6b3b8a95369223f742f00ce2714724efe22b11a3a737f7b48dddd7b6dd4a706a70c77d2fe7498bee83f2aff87d6cbdc4e1a65c715c29c0ffb95bd56392",
         "dest-filename": "npmlog-bnBtbG9nQG5wbTo0LjEuMg==-edbda9f95e.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/npmlog/-/npmlog-5.0.1.tgz",
-        "sha512": "02a66d0d458e30ab351bff25c329558eb75882a03877d9eef2173ed20cd1c650dbd48d74f851c118c5ece9a8901c574251496a1fdf4c50cb8b7f3583343b5fc7",
-        "dest-filename": "npmlog-bnBtbG9nQG5wbTo1LjAuMQ==-516b266302.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -15245,6 +15672,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/p-limit/-/p-limit-3.1.0.tgz",
+        "sha512": "4d839a9ccdf01b0346b193767154d83c0af0e39e319d78f9aa6585d5b12801ce3e714fe897b19587ba1d7af8e9d4534776e1dcdca64c70576ec54e5773ab8945",
+        "dest-filename": "p-limit-cC1saW1pdEBucG06My4xLjA=-7c3690c4db.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/p-locate/-/p-locate-2.0.0.tgz",
         "sha1": "20a0103b222a70c8fd39cc2e580680f3dde5ec43",
         "dest-filename": "p-locate-cC1sb2NhdGVAbnBtOjIuMC4w-e2dceb9b49.tgz",
@@ -15262,6 +15696,13 @@
         "url": "https://registry.npmjs.org/p-locate/-/p-locate-4.1.0.tgz",
         "sha512": "47bf5967fd30031286bb7a18325cfc8f2fe46e1b0dad2ed2299ecfc441c1809e7e1769ad156d9f2b670eb4187570762442c6f3155ec8f84a1129ee98b74a0aec",
         "dest-filename": "p-locate-cC1sb2NhdGVAbnBtOjQuMS4w-513bd14a45.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/p-locate/-/p-locate-5.0.0.tgz",
+        "sha512": "2da363b51594058fbecc1e6713f37071aa0cca548f93e4be647341d53cdd6cc24c9f2e9dca7a401aded7fed97f418ab74c8784ea7c47a696e8d8b1b29ab1b93f",
+        "dest-filename": "p-locate-cC1sb2NhdGVAbnBtOjUuMC4w-1623088f36.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -15402,6 +15843,13 @@
         "url": "https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz",
         "sha512": "190d84591a5057cfe8f80c3c62ab5f6593df3515996246e2744f64e6ba65fe10b7bed1c705f1a6d887e2eaa595f9ca031a4ad42990311372e8b7991cb11961fa",
         "dest-filename": "parent-module-cGFyZW50LW1vZHVsZUBucG06MS4wLjE=-6ba8b25514.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/parent-module/-/parent-module-2.0.0.tgz",
+        "sha512": "ba8d19f4925e5b3bfc046fad45c6a904a349d1dae8f5c2f27331b3ba54ba11f7b201d782f6c6e88ed5ba5f0bd8c499049def449fe2765c4978cf282555e23016",
+        "dest-filename": "parent-module-cGFyZW50LW1vZHVsZUBucG06Mi4wLjA=-f131f13d68.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -15759,6 +16207,13 @@
         "url": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.0.tgz",
         "sha512": "958d50fcf889182db33afff3dfdd563930fe674d9b0a0b057efc685d77fa87b92ff68f969ac9b362aac0c18eb7b0d80ec44e3111dab45b25275df29e06b4af63",
         "dest-filename": "picomatch-cGljb21hdGNoQG5wbToyLjMuMA==-16818720ea.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz",
+        "sha512": "254ded7874cd8e6136542185cee63c117cc20d5c04a81d9af1fb08bf0692b4784058911e55dd68d500fcd0253af997445d748b6d2b2e2f0263902056a9141454",
+        "dest-filename": "picomatch-cGljb21hdGNoQG5wbToyLjMuMQ==-050c865ce8.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -17394,6 +17849,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/resolve-global/-/resolve-global-1.0.0.tgz",
+        "sha512": "cc56b5d95e0e2ed4f95d45ff43854bbd37c17fe3a4d123dcd4534633fcfd72d51d894eb5f2ac0aa569ddd021ecdfe46a44e7f2120fc386e1db31662a72096313",
+        "dest-filename": "resolve-global-cmVzb2x2ZS1nbG9iYWxAbnBtOjEuMC4w-c4e11d33e8.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/resolve-options/-/resolve-options-1.1.0.tgz",
         "sha1": "32bb9e39c06d67338dc9378c0d6d6074566ad131",
         "dest-filename": "resolve-options-cmVzb2x2ZS1vcHRpb25zQG5wbToxLjEuMA==-437813d941.tgz",
@@ -17852,6 +18314,13 @@
         "url": "https://registry.npmjs.org/semver/-/semver-7.3.5.tgz",
         "sha512": "3e878625887c1cae014cefdaf537fa646def7a8fc0ed956c62b480e89f27cbd9dbdc1d55ae992e37ecfd384e707c4e69e87e0b721619b1e8224206c90fde1915",
         "dest-filename": "semver-c2VtdmVyQG5wbTo3LjMuNQ==-5eafe6102b.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/semver/-/semver-7.3.7.tgz",
+        "sha512": "425613b9c51839ec2cf96784ba30e8106ce2cf82ba738ed5fc177e2e349261c03de29f8398835d7fb9dc6948a74e17ef672bb5de537d398d570f1b7c0b44f0d2",
+        "dest-filename": "semver-c2VtdmVyQG5wbTo3LjMuNw==-2fa3e87756.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -20656,6 +21125,20 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.4.tgz",
+        "sha512": "ff186a5cfff6036452b3e27c24d5e98a2355bef34cd284e8b0d566427ba794abeaf68e26ba91ce0409e7cc7d25c083ca6b35cabc02ac569d64afe1ff2b8960a1",
+        "dest-filename": "vscode-languageserver-textdocument-dnNjb2RlLWxhbmd1YWdlc2VydmVyLXRleHRkb2N1bWVudEBucG06MS4wLjQ=-d0b63abb9d.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/vscode-uri/-/vscode-uri-3.0.3.tgz",
+        "sha512": "11cb304764bc6e947b7c3d183de4bbaf6c57131ad271533183831e74009a58712dc7d7ed085fea1c6d711a4a25cd33dc1268d36af09081b5731d421d4cccc518",
+        "dest-filename": "vscode-uri-dnNjb2RlLXVyaUBucG06My4wLjM=-683bf9de83.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/w3c-hr-time/-/w3c-hr-time-1.0.2.tgz",
         "sha512": "cfc3f90ef0cd8ca0e81481caeeaf2bf2569c913ea5fa3a3f61edc73a57bb97d9c808ff657f50a2db97f2f6f1ddd093967b09081735c81228374dd293ec94397d",
         "dest-filename": "w3c-hr-time-dzNjLWhyLXRpbWVAbnBtOjEuMC4y-ec3c2dacbf.tgz",
@@ -21331,6 +21814,13 @@
         "url": "https://registry.npmjs.org/ylru/-/ylru-1.2.1.tgz",
         "sha512": "7da42ba8d33370f0871950b669a388364d772be69a04350f8c65a5d2d78e5f2c0494b8f254007a39eda38fada31d8b70b14e3d8d78527186ef3c434afbacc0bd",
         "dest-filename": "ylru-eWxydUBucG06MS4yLjE=-33c45248be.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz",
+        "sha512": "ad592cbec9cd09d27fa2119ceb180fc3237c7a1782c6c88b33c9b1b84fedfe6395a897b03ee3b59a22e94c74224604ca08b7b12f831e00555a82db3b1e6359d9",
+        "dest-filename": "yocto-queue-eW9jdG8tcXVldWVAbnBtOjAuMS4w-f77b3d8d00.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
