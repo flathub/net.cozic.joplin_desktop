@@ -9,4 +9,4 @@ Type=Application
 Categories=Office;
 MimeType=x-scheme-handler/joplin;
 X-GNOME-SingleWindow=true
-SingleMainWindow=true
+X-SingleMainWindow=true

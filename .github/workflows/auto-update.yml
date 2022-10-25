@@ -51,12 +51,12 @@ jobs:
         if: steps.is-updated.outputs.updated
         run: |
           git submodule update --init
-          pushd flatpak-builder-tools/node
           ver=$(grep release net.cozic.joplin_desktop.appdata.xml | grep -m1 -oP '(?<=version=.)[^"]+')
+          pushd flatpak-builder-tools/node
           curl https://raw.githubusercontent.com/laurent22/joplin/v${ver}/yarn.lock > yarn.lock
           pip install poetry
           poetry install
-          poetry run flatpak-node-generator yarn 
+          poetry run flatpak-node-generator yarn yarn.lock
           popd
           mv flatpak-builder-tools/node/generated-sources.json ./
           
