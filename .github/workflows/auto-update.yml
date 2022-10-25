@@ -51,8 +51,8 @@ jobs:
         if: steps.is-updated.outputs.updated && matrix.branch == ''
         run: |
           git submodule update --init
-          pushd flatpak-builder-tools/node
           ver=$(grep release net.cozic.joplin_desktop.appdata.xml | grep -m1 -oP '(?<=version=.)[^"]+')
+          pushd flatpak-builder-tools/node
           curl https://raw.githubusercontent.com/laurent22/joplin/v${ver}/yarn.lock > yarn.lock
           pip install poetry
           poetry install
