@@ -56,7 +56,7 @@ jobs:
           curl https://raw.githubusercontent.com/laurent22/joplin/v${ver}/yarn.lock > yarn.lock
           pip install poetry
           poetry install
-          poetry run flatpak-node-generator yarn 
+          poetry run flatpak-node-generator yarn yarn.lock
           popd
           mv flatpak-builder-tools/node/generated-sources.json ./
           
