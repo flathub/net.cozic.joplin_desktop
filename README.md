@@ -1,6 +1,6 @@
 ## File system sync on removable-media
 This flatpak only have permission to access user's home directory.  
-Need manually add permission to allow access other location. 
+Need to manually add permission to allow access other location. 
 
 
 You can do it with [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal), and configure permissions with nice gui.  
@@ -26,7 +26,7 @@ This feature is enabled for full external editor support.
 Path:
 /bin/flatpak-spawn
 Arguments:
---host <outside flatpak command>
+--host <outside command>
 ```
 
 #### example

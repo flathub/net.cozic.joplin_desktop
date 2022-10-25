@@ -36,13 +36,12 @@ modules:
       - '*'
     sources:
       - type: archive
-        url: https://github.com/libvips/libvips/releases/download/v8.11.4/vips-8.11.4.tar.gz
-        sha256: 5043f38828a0ff9f2275f9252f69e14f701ef11f55786cda8aa6ce2c4fbed2f7
+        url: https://github.com/libvips/libvips/releases/download/v8.13.2/vips-8.13.2.tar.gz
+        sha256: 41db5ed40a22ad50f8f37782e1ae5bac76f9f2e0b5731728f97c55f245f1da2a
         x-checker-data:
-            type: json
-            url: https://api.github.com/repos/libvips/libvips/releases/latest
-            version-query: .tag_name | sub("^v"; "")
-            url-query: ".assets[] | select(.name==\"vips-\" + $version + \".tar.gz\") | .browser_download_url"
+          type: anitya
+          project-id: 5097
+          url-template: https://github.com/libvips/libvips/releases/download/v$version/vips-$version.tar.gz
 
   - name: rsync
     config-opts:
@@ -52,8 +51,14 @@ modules:
       - /share
     sources:
       - type: archive
-        url: https://download.samba.org/pub/rsync/src/rsync-3.2.3.tar.gz
-        sha256: becc3c504ceea499f4167a260040ccf4d9f2ef9499ad5683c179a697146ce50e
+        url: https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
+        sha256: 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
+        x-checker-data:
+          type: anitya
+          project-id: 4217
+          versions:
+            <: '4.0'
+          url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
 
   - name: joplin
     buildsystem: simple
