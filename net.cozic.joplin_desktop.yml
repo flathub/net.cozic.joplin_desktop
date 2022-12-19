@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '22.08'
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node16
+  - org.freedesktop.Sdk.Extension.node18
 separate-locales: false
 rename-icon: joplin
 rename-desktop-file: joplin.desktop
@@ -36,8 +36,12 @@ modules:
       - '*'
     sources:
       - type: archive
-        url: https://github.com/libvips/libvips/releases/download/v8.11.4/vips-8.11.4.tar.gz
-        sha256: 5043f38828a0ff9f2275f9252f69e14f701ef11f55786cda8aa6ce2c4fbed2f7
+        url: https://github.com/libvips/libvips/releases/download/v8.13.3/vips-8.13.3.tar.gz
+        sha256: 4eff5cdc8dbe1a05a926290a99014e20ba386f5dcca38d9774bef61413435d4c
+        x-checker-data:
+          type: anitya
+          project-id: 5097
+          url-template: https://github.com/libvips/libvips/releases/download/v$version/vips-$version.tar.gz
 
   - name: rsync
     config-opts:
@@ -47,16 +51,22 @@ modules:
       - /share
     sources:
       - type: archive
-        url: https://download.samba.org/pub/rsync/src/rsync-3.2.3.tar.gz
-        sha256: becc3c504ceea499f4167a260040ccf4d9f2ef9499ad5683c179a697146ce50e
+        url: https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
+        sha256: 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
+        x-checker-data:
+          type: anitya
+          project-id: 4217
+          versions:
+            <: '4.0'
+          url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
 
   - name: joplin
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node16/bin
+      append-path: /usr/lib/sdk/node18/bin
       env:
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
-        npm_config_nodedir: /usr/lib/sdk/node16
+        npm_config_nodedir: /usr/lib/sdk/node18
     build-commands:
       - rm -rf packages/app-clipper
       - $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn2-setup.sh
@@ -83,8 +93,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v2.9.17.tar.gz
-        sha256: 5a1d205bd52b86182b281f7c83b8a7b463941f5043729b4408490b249dfa0af8
+        url: https://github.com/laurent22/joplin/archive/v2.10.2.tar.gz
+        sha256: a8a21042d7bb812c6c16bce891282d25a66f32137b067ccd8327f10c1801632c
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases
