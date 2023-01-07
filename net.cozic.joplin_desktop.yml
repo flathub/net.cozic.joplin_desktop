@@ -36,12 +36,12 @@ modules:
       - '*'
     sources:
       - type: archive
-        url: https://github.com/libvips/libvips/releases/download/v8.13.3/vips-8.13.3.tar.gz
-        sha256: 4eff5cdc8dbe1a05a926290a99014e20ba386f5dcca38d9774bef61413435d4c
+        url: https://github.com/libvips/libvips/archive/refs/tags/v8.13.3.tar.gz
+        sha256: 3c86277e1b44e154dde4026b44bfb2019129b33e6f2f82ed132d9ee6bbb4757f
         x-checker-data:
           type: anitya
           project-id: 5097
-          url-template: https://github.com/libvips/libvips/releases/download/v$version/vips-$version.tar.gz
+          url-template: https://github.com/libvips/libvips/archive/refs/tags/v$version.tar.gz
 
   - name: rsync
     config-opts:
