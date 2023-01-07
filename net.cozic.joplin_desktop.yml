@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '22.08'
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node16
+  - org.freedesktop.Sdk.Extension.node18
 separate-locales: false
 rename-icon: joplin
 rename-desktop-file: joplin.desktop
@@ -32,12 +32,14 @@ modules:
   - cups/gtk-cups-backend.yml
 
   - name: libvips
+    buildsystem: meson
+    builddir: true
     cleanup:
       - '*'
     sources:
       - type: archive
-        url: https://github.com/libvips/libvips/archive/refs/tags/v8.13.1.tar.gz
-        sha256: e6dad18dfae5c47a404adad63d7e9bf48e33e30f05c394486d8b899eacadafbf
+        url: https://github.com/libvips/libvips/archive/refs/tags/v8.14.0.tar.gz
+        sha256: b31ca79f65341518926c354f59c613dec893722e20774bdbee9a3764652fa412
         x-checker-data:
           type: anitya
           project-id: 5097
@@ -63,10 +65,10 @@ modules:
   - name: joplin
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node16/bin
+      append-path: /usr/lib/sdk/node18/bin
       env:
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
-        npm_config_nodedir: /usr/lib/sdk/node16
+        npm_config_nodedir: /usr/lib/sdk/node18
     build-commands:
       - rm -rf packages/app-clipper
       - $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn2-setup.sh
