@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '22.08'
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node16
+  - org.freedesktop.Sdk.Extension.node18
 separate-locales: false
 rename-icon: joplin
 rename-desktop-file: joplin.desktop
@@ -65,10 +65,10 @@ modules:
   - name: joplin
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node16/bin
+      append-path: /usr/lib/sdk/node18/bin
       env:
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
-        npm_config_nodedir: /usr/lib/sdk/node16
+        npm_config_nodedir: /usr/lib/sdk/node18
     build-commands:
       - rm -rf packages/app-clipper
       - $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn2-setup.sh
