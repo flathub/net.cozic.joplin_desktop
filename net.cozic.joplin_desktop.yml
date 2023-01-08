@@ -32,6 +32,8 @@ modules:
   - cups/gtk-cups-backend.yml
 
   - name: libvips
+    buildsystem: meson
+    builddir: true
     cleanup:
       - '*'
     sources:
