@@ -38,8 +38,8 @@ modules:
       - '*'
     sources:
       - type: archive
-        url: https://github.com/libvips/libvips/archive/refs/tags/v8.14.0.tar.gz
-        sha256: b31ca79f65341518926c354f59c613dec893722e20774bdbee9a3764652fa412
+        url: https://github.com/libvips/libvips/archive/refs/tags/v8.14.1.tar.gz
+        sha256: a4a6b282216f7522b42ebb5cd64cfd82a0d1a632033e9c0502f021e945fed641
         x-checker-data:
           type: anitya
           project-id: 5097
