@@ -18840,9 +18840,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/sass/-/sass-1.57.1.tgz",
-        "sha512": "3b6f8bc0b4bbf68a7b188d3167c7eacc5ed7da6fe6f1615f234d9d1ce76c2b9476102792e45eb6cebc20feb7a5335ae348bcbb55dfc388c348bcfad01ac0348f",
-        "dest-filename": "sass-c2Fzc0BucG06MS41Ny4x-734a08781b.tgz",
+        "url": "https://registry.npmjs.org/sass/-/sass-1.58.0.tgz",
+        "sha512": "3e230970fdf70dd2ad67fd634a38ea5482a28680dceb25a662bf4aff8af77d5548103025b83d2aed766244aacd25c3cadea90b445ffbf43343d47e6ad4b06382",
+        "dest-filename": "sass-c2Fzc0BucG06MS41OC4w-a721963488.tgz",
         "dest": "flatpak-node/yarn-mirror/yarn-berry/locator"
     },
     {
@@ -22445,9 +22445,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/yeoman-generator/-/yeoman-generator-5.7.0.tgz",
-        "sha512": "cfd67080aa0339dfa594f0c2c27f00c76978227e4532196c97175e0725b800cc614fe1db4c4c5728401a86c0a51d26f0673d62e4ecd1c0bc1121474e241af907",
-        "dest-filename": "yeoman-generator-eWVvbWFuLWdlbmVyYXRvckBucG06NS43LjA=-16b779372d.tgz",
+        "url": "https://registry.npmjs.org/yeoman-generator/-/yeoman-generator-5.7.1.tgz",
+        "sha512": "e57f44a7966eee0c3a243a5a864802a2bb33f01510d220db9cb3b73afd1480b73d19e75350c9346b60cc904b29abbf9f647b5570e4360bf6086f3a431ffe4e32",
+        "dest-filename": "yeoman-generator-eWVvbWFuLWdlbmVyYXRvckBucG06NS43LjE=-9eaa64b264.tgz",
         "dest": "flatpak-node/yarn-mirror/yarn-berry/locator"
     },
     {
