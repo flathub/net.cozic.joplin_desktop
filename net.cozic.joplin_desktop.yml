@@ -21,7 +21,6 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=com.canonical.AppMenu.Registrar
-  - --talk-name=org.freedesktop.Flatpak
 # gtk-cups-backend
   - --env=GTK_PATH=/app/lib/gtkmodules
   - --socket=cups
