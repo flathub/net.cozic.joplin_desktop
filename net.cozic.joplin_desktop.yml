@@ -117,4 +117,7 @@ modules:
         dest-filename: joplin-desktop.sh
         commands:
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
-          - exec zypak-wrapper /app/joplin-desktop/joplin "$@"
+          - if [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then
+          - wayland_opt="$wayland_opt --enable-features=UseOzonePlatform --ozone-platform=wayland"
+          - fi
+          - exec zypak-wrapper /app/joplin-desktop/joplin $wayland_opt "$@"
