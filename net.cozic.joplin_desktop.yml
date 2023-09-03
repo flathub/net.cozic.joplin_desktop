@@ -94,8 +94,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v2.11.11.tar.gz
-        sha256: 2ad3137a3500d04cc6d9f544472c521842f0c49b1012129cbb8fa634f46ae50c
+        url: https://github.com/laurent22/joplin/archive/v2.12.15.tar.gz
+        sha256: 1ab8cac6ded11abc5a6437b58342b519466cbf869bf3e7cc0a651413ff8faa0a
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases/latest
@@ -116,4 +116,7 @@ modules:
         dest-filename: joplin-desktop.sh
         commands:
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
-          - exec zypak-wrapper /app/joplin-desktop/joplin "$@"
+          - if [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then
+          - wayland_opt="$wayland_opt --enable-features=UseOzonePlatform --ozone-platform=wayland"
+          - fi
+          - exec zypak-wrapper /app/joplin-desktop/joplin $wayland_opt "$@"
