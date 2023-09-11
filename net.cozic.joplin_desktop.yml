@@ -25,6 +25,8 @@ finish-args:
   - --env=GTK_PATH=/app/lib/gtkmodules
   - --socket=cups
   - --system-talk-name=org.freedesktop.Avahi
+  # fix for broken cursor on Wayland
+  - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
 modules:
   - shared-modules/libsecret/libsecret.json
 
