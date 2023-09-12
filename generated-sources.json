@@ -2138,6 +2138,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/@electron/rebuild/-/rebuild-3.3.0.tgz",
+        "sha512": "4b5be0a7320e4b5c02266b188dd2f3f7b313515e944cb70c93f1c4df0f741d8b55c6f5be3d0770c4b6e0b2b1025f66f2b2a72798ce5ad0aea65e3fe0c15818b5",
+        "dest-filename": "rebuild-QGVsZWN0cm9uL3JlYnVpbGRAbnBtOjMuMy4w-95d2fdc392.tgz",
+        "dest": "flatpak-node/yarn-mirror/yarn-berry/locator"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/@electron/remote/-/remote-2.0.10.tgz",
         "sha512": "dd214a29a4177325a0c2689bb9df94a8997f5e51ce80b708ddfc2d07da4d7a53d2240713c6870e26b17a15ac412106a3d7e474e438bac6e02cc19a57016ef184",
         "dest-filename": "remote-QGVsZWN0cm9uL3JlbW90ZUBucG06Mi4wLjEw-74ab6fca79.tgz",
@@ -15854,6 +15861,13 @@
         "url": "https://registry.npmjs.org/node-abi/-/node-abi-3.45.0.tgz",
         "sha512": "8b05ee16b300705562fd9a198aaabc07301db0bc3d9310df4c2d073328d77d22ffe824830060f952647b6b3ac0816575cca62aedd514323e28c2eb0158a2ec89",
         "dest-filename": "node-abi-bm9kZS1hYmlAbnBtOjMuNDUuMA==-18c4305d7d.tgz",
+        "dest": "flatpak-node/yarn-mirror/yarn-berry/locator"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/node-abi/-/node-abi-3.47.0.tgz",
+        "sha512": "dace81d8259933ffe43e0c27b88d0aad8c0d8df741c84db9cef01a129abd207e3370db1aac7f0886efd4b97e9730f12880303192e5057999fad295cd1c0aa7dc",
+        "dest-filename": "node-abi-bm9kZS1hYmlAbnBtOjMuNDcuMA==-ff8498dcd4.tgz",
         "dest": "flatpak-node/yarn-mirror/yarn-berry/locator"
     },
     {
