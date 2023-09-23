@@ -36,8 +36,8 @@ modules:
       - '*'
     sources:
       - type: archive
-        url: https://github.com/libvips/libvips/archive/refs/tags/v8.14.4.tar.gz
-        sha256: 0638150ee5066814aa22ca89e0285f2310a539be3c39a631edeb38135a3f1f15
+        url: https://github.com/libvips/libvips/archive/refs/tags/v8.14.5.tar.gz
+        sha256: de5ab7ffa5c1ad9d68f97bfa8c31b6a7e4a184c89947552ea92107318b0208b4
         x-checker-data:
           type: anitya
           project-id: 5097
@@ -93,8 +93,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v2.12.17.tar.gz
-        sha256: 9c7327bc93d251f7b031a917a3ff0818d938eb4479c1f28c9d3e31e56fc989b2
+        url: https://github.com/laurent22/joplin/archive/v2.12.18.tar.gz
+        sha256: a85f2133e5b71d829fbc9438d2e3191172f8af2e270906745203a8fa36aac307
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases/latest
