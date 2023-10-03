@@ -10,6 +10,16 @@ flatpak override --filesystem=host net.cozic.joplin_desktop
 ```
 Note: You can also use multiple `filesystem` options to set `/media`,`/run/media`,`/mnt` as you need.
 
+## Fractional scaling under Wayland
+
+Wayland support is already implemented but disabled by default.
+
+You can enable it with [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal) by checking the "Wayland windowing system" toggle or by running the command below: 
+
+```bash
+flatpak override -u net.cozic.joplin_desktop --socket=wayland
+``` 
+
 ## Use external editor with flatpak
 There are two ways.
 ### xdg-open
