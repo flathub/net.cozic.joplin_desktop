@@ -115,7 +115,7 @@ modules:
       - type: script
         dest-filename: clean-gpucache.sh
         commands:
-          - set -e
+          - set -e 
           - dir=~/.var/app/net.cozic.joplin_desktop/config/Joplin/GPUCache
           - | 
             for f in $(find $dir -maxdepth 1 -mindepth 1)
