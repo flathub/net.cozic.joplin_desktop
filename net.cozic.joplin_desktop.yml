@@ -120,7 +120,7 @@ modules:
           - | 
             for f in $(find $dir -maxdepth 1 -mindepth 1)
             do
-                if [ $(stat --format=%Z /usr/lib/*/libdrm.so) -gt $(stat --format=%Z $f) ];then
+                if [ $(stat --format=%Z /usr/lib/*/libdrm.so.?) -gt $(stat --format=%Y $f) ];then
                     rm $f
                 fi
             done
