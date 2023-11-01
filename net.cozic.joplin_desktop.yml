@@ -89,6 +89,7 @@ modules:
         done
       - install -Dm755 joplin.desktop -t /app/share/applications
       - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/metainfo
+      - install -Dm755 clean-gpucache.sh -t /app/bin
       - install -Dm755 joplin-desktop.sh /app/bin/joplin-desktop
 
     sources:
@@ -112,8 +113,22 @@ modules:
         path: net.cozic.joplin_desktop.appdata.xml
 
       - type: script
+        dest-filename: clean-gpucache.sh
+        commands:
+          - set -e 
+          - dir=~/.var/app/net.cozic.joplin_desktop/config/Joplin/GPUCache
+          - | 
+            for f in $(find $dir -maxdepth 1 -mindepth 1)
+            do
+                if [ $(stat --format=%Z /usr/lib/*/libdrm.so) -gt $(stat --format=%Z $f) ];then
+                    rm $f
+                fi
+            done
+
+      - type: script
         dest-filename: joplin-desktop.sh
         commands:
+          - /app/bin/clean-gpucache.sh || true
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
           - if [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then
           - wayland_opt="--enable-features=UseOzonePlatform,WaylandWindowDecorations
