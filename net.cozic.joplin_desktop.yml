@@ -36,8 +36,8 @@ modules:
       - '*'
     sources:
       - type: archive
-        url: https://github.com/libvips/libvips/archive/refs/tags/v8.14.5.tar.gz
-        sha256: de5ab7ffa5c1ad9d68f97bfa8c31b6a7e4a184c89947552ea92107318b0208b4
+        url: https://github.com/libvips/libvips/archive/refs/tags/v8.15.0.tar.gz
+        sha256: 990641f1c10f1df238719b28e6843275bdefd76de642d197307455f0183c02c3
         x-checker-data:
           type: anitya
           project-id: 5097
@@ -115,9 +115,9 @@ modules:
       - type: script
         dest-filename: clean-gpucache.sh
         commands:
-          - set -e 
+          - set -e
           - dir=~/.var/app/net.cozic.joplin_desktop/config/Joplin/GPUCache
-          - | 
+          - |
             for f in $(find $dir -maxdepth 1 -mindepth 1)
             do
                 if [ $(stat --format=%Z /usr/lib/*/libdrm.so.?) -gt $(stat --format=%Y $f) ];then
