@@ -3643,9 +3643,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@js-draw/material-icons/-/material-icons-1.11.2.tgz",
-        "sha512": "7f31cfce4be87f64e4f3a2acceb38589b530e0f507bf87c2fc12c23f983dc05da8b9e87fe2e0f51ed9bde316f0e4b08845b66d3b40d7fa4320855cbaa3cc1e1e",
-        "dest-filename": "material-icons-QGpzLWRyYXcvbWF0ZXJpYWwtaWNvbnNAbnBtOjEuMTEuMg==-6a6bbdf936.tgz",
+        "url": "https://registry.npmjs.org/@js-draw/material-icons/-/material-icons-1.14.0.tgz",
+        "sha512": "1c0325a44d1b3e946d53e9d0fbe443032f7f5b8208f218f8e8035054a5c2f1ca70db5fd7fa7ff9c580da1f885fc8cdd1e70509848782777573d5f1591f69c4df",
+        "dest-filename": "material-icons-QGpzLWRyYXcvbWF0ZXJpYWwtaWNvbnNAbnBtOjEuMTQuMA==-6e67ee6399.tgz",
         "dest": "flatpak-node/yarn-mirror/yarn-berry/locator"
     },
     {
@@ -16894,9 +16894,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/js-draw/-/js-draw-1.11.2.tgz",
-        "sha512": "702df1ac00d8ac8559c746b461d87fd0aa143a292b3cd9288bff0be83538e5523baaeaaeb4f749ac6e18ee2d752f1aaa54705d3293606001060aed2c854e7879",
-        "dest-filename": "js-draw-anMtZHJhd0BucG06MS4xMS4y-59669bbe37.tgz",
+        "url": "https://registry.npmjs.org/js-draw/-/js-draw-1.14.0.tgz",
+        "sha512": "693c76ec6860e88433029c0741e5f48bbe7babb3d46d49611adeab3a340d1763d62da4bccf7b607e17ea4cc61b3f28591a44732f9c92957d4c636a5343f4815a",
+        "dest-filename": "js-draw-anMtZHJhd0BucG06MS4xNC4w-0e2bbf318a.tgz",
         "dest": "flatpak-node/yarn-mirror/yarn-berry/locator"
     },
     {
