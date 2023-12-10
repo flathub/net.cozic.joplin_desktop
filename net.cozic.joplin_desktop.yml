@@ -95,8 +95,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v2.13.8.tar.gz
-        sha256: 4ea9ab601ba5d2edf6fb452638ba10404544e59ad05ff428db31764592ab012c
+        url: https://github.com/laurent22/joplin/archive/v2.13.9.tar.gz
+        sha256: b1152086bc464a24b61e9ab6bcfe875137f31c5b5856a39769e292d3871d7024
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases
