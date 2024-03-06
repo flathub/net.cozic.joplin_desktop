@@ -26,27 +26,9 @@ finish-args:
   - --system-talk-name=org.freedesktop.Avahi
 modules:
   - shared-modules/libsecret/libsecret.json
-
   - cups/gtk-cups-backend.yml
 
-  - name: libvips
-    buildsystem: meson
-    builddir: true
-    cleanup:
-      - '*'
-    sources:
-      - type: archive
-        url: https://github.com/libvips/libvips/archive/refs/tags/v8.15.1.tar.gz
-        sha256: 5701445a076465a3402a135d13c0660d909beb8efc4f00fbbe82392e243497f2
-        x-checker-data:
-          type: anitya
-          project-id: 5097
-          url-template: https://github.com/libvips/libvips/archive/refs/tags/v$version.tar.gz
-
   - name: rsync
-    config-opts:
-      - --disable-xxhash
-      - --disable-zstd
     cleanup:
       - /share
     sources:
@@ -67,9 +49,18 @@ modules:
       env:
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
         npm_config_nodedir: /usr/lib/sdk/node18
+        YARN_ENABLE_INLINE_BUILDS: '1'
+        YARN_ENABLE_TELEMETRY: '0'
+        YARN_ENABLE_NETWORK: '0'
+        YARN_ENABLE_GLOBAL_CACHE: '0'
+        SHARP_IGNORE_GLOBAL_LIBVIPS: '1'
+        YARN_GLOBAL_FOLDER: /run/build/joplin/flatpak-node/yarn-mirror/global
+        TMPDIR: /run/build/joplin/flatpak-tmp
     build-commands:
       - rm -rf packages/app-clipper
-      - $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn2-setup.sh
+      - yarn config 
+      - yarn plugin import $FLATPAK_BUILDER_BUILDDIR/flatpak-node/flatpak-yarn.js
+      - yarn convertToZip $(which yarn)
       - yarn install
       # generateSha512.js require appimage build, need touch it
       # If no it will cause electron-builder failed without error message even set debug!
@@ -103,6 +94,10 @@ modules:
           url-query: '"https://github.com/laurent22/joplin/archive/v" + $version +
             ".tar.gz"'
           timestamp-query: .published_at
+
+      - type: shell
+        commands:
+          - echo '{}' > packages/default-plugins/pluginRepositories.json
 
       - generated-sources.json
 
