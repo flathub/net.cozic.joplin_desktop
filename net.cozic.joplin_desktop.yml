@@ -58,7 +58,7 @@ modules:
         TMPDIR: /run/build/joplin/flatpak-tmp
     build-commands:
       - rm -rf packages/app-clipper
-      - yarn config 
+      - yarn config
       - yarn plugin import $FLATPAK_BUILDER_BUILDDIR/flatpak-node/flatpak-yarn.js
       - yarn convertToZip $(which yarn)
       - yarn install
@@ -85,8 +85,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v2.14.17.tar.gz
-        sha256: 9d202222d103fbac87bcfad050e76476a5fd8270f5e9cb0c160fdb710e53b3b9
+        url: https://github.com/laurent22/joplin/archive/v2.14.19.tar.gz
+        sha256: ec65d5bbd790c65a0f6f4b7ed6838e13bcda5a4ec63488262a28db4b047b7050
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases/latest
