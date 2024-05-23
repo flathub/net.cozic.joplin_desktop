@@ -19855,16 +19855,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/nan/-/nan-2.17.0.tgz",
-        "sha512": "d994e0b65d2726c3b42900a3129c5c22be43f98bfdd299538ad66df4905f42f5490d2e6c78c97714ebec877fbd0a86165dfff597939a673cc5ea70e6e1c6a069",
-        "dest-filename": "nan-bmFuQG5wbToyLjE3LjA=-ec609aeaf7.tgz",
-        "dest": "flatpak-node/yarn-mirror/global/cache/locator"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/nan/-/nan-2.18.0.tgz",
-        "sha512": "5bbb5f1bbbcc386b43df4b07a1949273f255622c833c4c9056ca3f673fbfb907740742f8ea0b42fa91e16b9145311a6297a7e6fc0a047115b23958b8f84fdff3",
-        "dest-filename": "nan-bmFuQG5wbToyLjE4LjA=-4fe42f5845.tgz",
+        "url": "https://registry.npmjs.org/nan/-/nan-2.19.0.tgz",
+        "sha512": "9ced715f17e1fd158dc5f77f5cf7db21f164e6f80bb00c5447dcb93b4707309bbf016f54f7924b5eab616078c4a7ef20439a7de8af63529f276d53b109d45bb7",
+        "dest-filename": "nan-bmFuQG5wbToyLjE5LjA=-29a894a003.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
