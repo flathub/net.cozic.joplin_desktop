@@ -1,9 +1,9 @@
 app-id: net.cozic.joplin_desktop
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '22.08'
+base-version: '23.08'
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node18
 separate-locales: false
@@ -13,7 +13,6 @@ command: joplin-desktop
 finish-args:
   - --socket=pulseaudio
   - --socket=x11
-  - --socket=wayland
   - --device=dri
   - --share=ipc
   - --share=network
@@ -21,40 +20,21 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=com.canonical.AppMenu.Registrar
-  - --talk-name=org.freedesktop.Flatpak
 # gtk-cups-backend
   - --env=GTK_PATH=/app/lib/gtkmodules
   - --socket=cups
   - --system-talk-name=org.freedesktop.Avahi
 modules:
   - shared-modules/libsecret/libsecret.json
-
   - cups/gtk-cups-backend.yml
 
-  - name: libvips
-    buildsystem: meson
-    builddir: true
-    cleanup:
-      - '*'
-    sources:
-      - type: archive
-        url: https://github.com/libvips/libvips/archive/refs/tags/v8.15.1.tar.gz
-        sha256: 5701445a076465a3402a135d13c0660d909beb8efc4f00fbbe82392e243497f2
-        x-checker-data:
-          type: anitya
-          project-id: 5097
-          url-template: https://github.com/libvips/libvips/archive/refs/tags/v$version.tar.gz
-
   - name: rsync
-    config-opts:
-      - --disable-xxhash
-      - --disable-zstd
     cleanup:
       - /share
     sources:
       - type: archive
-        url: https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
-        sha256: 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
+        url: https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
+        sha256: 7399e9a6708c32d678a72a63219e96f23be0be2336e50fd1348498d07041df90
         x-checker-data:
           type: anitya
           project-id: 4217
@@ -69,9 +49,18 @@ modules:
       env:
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
         npm_config_nodedir: /usr/lib/sdk/node18
+        YARN_ENABLE_INLINE_BUILDS: '1'
+        YARN_ENABLE_TELEMETRY: '0'
+        YARN_ENABLE_NETWORK: '0'
+        YARN_ENABLE_GLOBAL_CACHE: '0'
+        SHARP_IGNORE_GLOBAL_LIBVIPS: '1'
+        YARN_GLOBAL_FOLDER: /run/build/joplin/flatpak-node/yarn-mirror/global
+        TMPDIR: /run/build/joplin/flatpak-tmp
     build-commands:
       - rm -rf packages/app-clipper
-      - $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn2-setup.sh
+      - yarn config
+      - yarn plugin import $FLATPAK_BUILDER_BUILDDIR/flatpak-node/flatpak-yarn.js
+      - yarn convertToZip $(which yarn)
       - yarn install
       # generateSha512.js require appimage build, need touch it
       # If no it will cause electron-builder failed without error message even set debug!
@@ -91,12 +80,13 @@ modules:
         done
       - install -Dm755 joplin.desktop -t /app/share/applications
       - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/metainfo
+      - install -Dm755 clean-gpucache.sh -t /app/bin
       - install -Dm755 joplin-desktop.sh /app/bin/joplin-desktop
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v2.13.15.tar.gz
-        sha256: 74ab900e929ba11b11c114c406ea379f5c2486efb1b809a95afd81d4a78c8d10
+        url: https://github.com/laurent22/joplin/archive/v2.14.22.tar.gz
+        sha256: 5cbda5b19aa41ff2371a13a08a74c08f321c8320bbbe729392d4ed5d5e65e826
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases
@@ -104,6 +94,10 @@ modules:
           url-query: '"https://github.com/laurent22/joplin/archive/v" + $version +
             ".tar.gz"'
           timestamp-query: .[0] | .published_at
+
+      - type: shell
+        commands:
+          - echo '{}' > packages/default-plugins/pluginRepositories.json
 
       - generated-sources.json
 
@@ -114,10 +108,25 @@ modules:
         path: net.cozic.joplin_desktop.appdata.xml
 
       - type: script
+        dest-filename: clean-gpucache.sh
+        commands:
+          - set -e
+          - dir=~/.var/app/net.cozic.joplin_desktop/config/Joplin/GPUCache
+          - |
+            for f in $(find $dir -maxdepth 1 -mindepth 1)
+            do
+                if [ $(stat --format=%Z /usr/lib/*/libdrm.so.?) -gt $(stat --format=%Y $f) ];then
+                    rm $f
+                fi
+            done
+
+      - type: script
         dest-filename: joplin-desktop.sh
         commands:
+          - /app/bin/clean-gpucache.sh || true
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
           - if [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then
-          - wayland_opt="$wayland_opt --enable-features=UseOzonePlatform --ozone-platform=wayland"
+          - wayland_opt="--enable-features=UseOzonePlatform,WaylandWindowDecorations
+            --ozone-platform=wayland $wayland_opt"
           - fi
           - exec zypak-wrapper /app/joplin-desktop/joplin $wayland_opt "$@"
