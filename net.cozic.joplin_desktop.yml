@@ -25,7 +25,6 @@ finish-args:
   - --socket=cups
   - --system-talk-name=org.freedesktop.Avahi
 modules:
-  - shared-modules/libsecret/libsecret.json
   - cups/gtk-cups-backend.yml
 
   - name: rsync
@@ -125,8 +124,7 @@ modules:
         commands:
           - /app/bin/clean-gpucache.sh || true
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
-          - if [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then
-          - wayland_opt="--enable-features=UseOzonePlatform,WaylandWindowDecorations
-            --ozone-platform=wayland $wayland_opt"
+          - if ([[ $WAYLAND_DISPLAY == /* ]] && [ -e $WAYLAND_DISPLAY ]) || [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then
+          -   wayland_opt="--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland $wayland_opt"
           - fi
           - exec zypak-wrapper /app/joplin-desktop/joplin $wayland_opt "$@"
