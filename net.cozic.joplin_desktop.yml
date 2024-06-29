@@ -25,6 +25,7 @@ finish-args:
   - --socket=cups
   - --system-talk-name=org.freedesktop.Avahi
 modules:
+  - shared-modules/libsecret/libsecret.json
   - cups/gtk-cups-backend.yml
 
   - name: rsync
