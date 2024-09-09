@@ -1,10 +1,10 @@
 [
     {
         "type": "archive",
-        "url": "https://playwright.azureedge.net/builds/chromium/1112/chromium-linux.zip",
+        "url": "https://playwright.azureedge.net/builds/chromium/1117/chromium-linux.zip",
         "strip-components": 0,
-        "sha256": "b75d7c3b9f49f1d26e5edcc3f291cd0f0ba821366045fcfb142fa51c4116d49a",
-        "dest": "flatpak-node/cache/ms-playwright/chromium-1112"
+        "sha256": "4fbb5e26d4b085fecb22940c129e33a77132dd3fe9e18edd408ffb5465477641",
+        "dest": "flatpak-node/cache/ms-playwright/chromium-1117"
     },
     {
         "type": "archive",
@@ -15,17 +15,17 @@
     },
     {
         "type": "archive",
-        "url": "https://playwright.azureedge.net/builds/firefox/1447/firefox-ubuntu-20.04.zip",
+        "url": "https://playwright.azureedge.net/builds/firefox/1449/firefox-ubuntu-20.04.zip",
         "strip-components": 0,
-        "sha256": "e6377dee2a92e042d27d06c482dc367a23c8f10396eae8e2e79fc4a650bfc640",
-        "dest": "flatpak-node/cache/ms-playwright/firefox-1447"
+        "sha256": "1bd54f0129d691ddaf331fe29fcd821877926eb162a072c2126fcd69ad7c076b",
+        "dest": "flatpak-node/cache/ms-playwright/firefox-1449"
     },
     {
         "type": "archive",
-        "url": "https://playwright.azureedge.net/builds/webkit/1992/webkit-ubuntu-20.04.zip",
+        "url": "https://playwright.azureedge.net/builds/webkit/2003/webkit-ubuntu-20.04.zip",
         "strip-components": 0,
-        "sha256": "b1d14ead8be1357cfe49dc647e39efa68a134ab84ecd88a32735b499e0203848",
-        "dest": "flatpak-node/cache/ms-playwright/webkit-1992"
+        "sha256": "880dac7b62af8ee3a9d6765a1e194a883a632e1a65fa972cccbfac02f133e509",
+        "dest": "flatpak-node/cache/ms-playwright/webkit-2003"
     },
     {
         "type": "file",
@@ -4385,9 +4385,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@js-draw/material-icons/-/material-icons-1.20.2.tgz",
-        "sha512": "3968473bb7c0f2f88c9a6a7617077430f20b1e5f5507de04ff8b220ddb368775bf9e38a8d6d8eb661ad3216f9f97fce492f1669643af8c233a2aa76ee978e5e1",
-        "dest-filename": "material-icons-QGpzLWRyYXcvbWF0ZXJpYWwtaWNvbnNAbnBtOjEuMjAuMg==-771f951e85.tgz",
+        "url": "https://registry.npmjs.org/@js-draw/material-icons/-/material-icons-1.20.3.tgz",
+        "sha512": "9a899af2d10c67ca547f23405462821bee23b876ca98526d0a5655defeefe9c0fc09ed1279f400d132f75c1ef119900a851c9f6c92cc3e95c6bfa5687bd88240",
+        "dest-filename": "material-icons-QGpzLWRyYXcvbWF0ZXJpYWwtaWNvbnNAbnBtOjEuMjAuMw==-e935651aa6.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -5295,9 +5295,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@playwright/test/-/test-1.43.1.tgz",
-        "sha512": "1e0b50cc580d104a384c4db62bf5fbb184d836a10c313666152f244eaea6f215e3fa6d43f138308086ee98775d25af61e329781a429bf3f6e0025dbe83b78380",
-        "dest-filename": "test-QHBsYXl3cmlnaHQvdGVzdEBucG06MS40My4x-f9db387b48.tgz",
+        "url": "https://registry.npmjs.org/@playwright/test/-/test-1.44.1.tgz",
+        "sha512": "d616784cdbc3e73f55ba1349ff06a5223bcc56f62464a7fbd5ac6817fba202aa67b50257a46eb87655e1a035c4dce7333ee4eebe37ff339296160e55015512dd",
+        "dest-filename": "test-QHBsYXl3cmlnaHQvdGVzdEBucG06MS40NC4x-90507b77e3.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -5575,6 +5575,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/@react-native/babel-plugin-codegen/-/babel-plugin-codegen-0.74.84.tgz",
+        "sha512": "511e2e8a28b9b3320903ce26482e8624e7d8283abbfd38727ad3904fadbe04173219e1d5b4794d2cd47381a31e2ea210693f05ab8a5c70c23eed0a8b38c5f377",
+        "dest-filename": "babel-plugin-codegen-QHJlYWN0LW5hdGl2ZS9iYWJlbC1wbHVnaW4tY29kZWdlbkBucG06MC43NC44NA==-b2ada55a80.tgz",
+        "dest": "flatpak-node/yarn-mirror/global/cache/locator"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/@react-native/babel-preset/-/babel-preset-0.74.83.tgz",
         "sha512": "289baedd7c95877aa0c947abfab12a87d6bf268531b033b390935f4690f25e20328c346855c87ad17fd76bf35c110f77882547016b34c90f9718d188042604ea",
         "dest-filename": "babel-preset-QHJlYWN0LW5hdGl2ZS9iYWJlbC1wcmVzZXRAbnBtOjAuNzQuODM=-6a3ee96062.tgz",
@@ -5582,9 +5589,23 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/@react-native/babel-preset/-/babel-preset-0.74.84.tgz",
+        "sha512": "5947eee98e1a1ae55da1c419bf1df70498905851fa91108761b65f067da9b2016b4912e0416110ac30b1a8f14e6cd01549ac8cd2b361a7616f2392bf1327aa96",
+        "dest-filename": "babel-preset-QHJlYWN0LW5hdGl2ZS9iYWJlbC1wcmVzZXRAbnBtOjAuNzQuODQ=-5cdc7a56b1.tgz",
+        "dest": "flatpak-node/yarn-mirror/global/cache/locator"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/@react-native/codegen/-/codegen-0.74.83.tgz",
         "sha512": "1a0be01d2dc06b627cfe6a75b82ff353c1ee4e1f194f98f3edae2654c58fc3bfab1b2bfbd016bcb8e541aba507d90d3ca3ad7b2004d873ed077f2cc07e6e27d3",
         "dest-filename": "codegen-QHJlYWN0LW5hdGl2ZS9jb2RlZ2VuQG5wbTowLjc0Ljgz-8408f9f4d4.tgz",
+        "dest": "flatpak-node/yarn-mirror/global/cache/locator"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@react-native/codegen/-/codegen-0.74.84.tgz",
+        "sha512": "d215e59eef62d28f2ffa05ca422fb1e93e3bd4bf399020f05b85ab26260078e85e5ab41d34d5baac2de0f3e2cbec75c07fb41c1c653ff3f779ee261f7552b605",
+        "dest-filename": "codegen-QHJlYWN0LW5hdGl2ZS9jb2RlZ2VuQG5wbTowLjc0Ljg0-d44d2e2d83.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -5624,6 +5645,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/@react-native/js-polyfills/-/js-polyfills-0.74.84.tgz",
+        "sha512": "f8f831b948c1c3d255973ea6e040ac20930b6c3a299ebe2ba4b9ac1b7da141a26b834c0cbaf1edb20018fc9fda542486d863545dec5f8eb9e173e3bdc863995d",
+        "dest-filename": "js-polyfills-QHJlYWN0LW5hdGl2ZS9qcy1wb2x5ZmlsbHNAbnBtOjAuNzQuODQ=-00faaa2890.tgz",
+        "dest": "flatpak-node/yarn-mirror/global/cache/locator"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/@react-native/metro-babel-transformer/-/metro-babel-transformer-0.74.83.tgz",
         "sha512": "846771e4df1d8aef32f865bf103dfdbd365af49c75762d9967469aa5b847e1e80dd5a80802eb23e635d371c7cd070c1617ddda279a156d1cdfb5e6608dbbad2a",
         "dest-filename": "metro-babel-transformer-QHJlYWN0LW5hdGl2ZS9tZXRyby1iYWJlbC10cmFuc2Zvcm1lckBucG06MC43NC44Mw==-7620ce25ef.tgz",
@@ -5631,9 +5659,16 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@react-native/metro-config/-/metro-config-0.74.83.tgz",
-        "sha512": "f008afa548109ab7d8d89ff09e685f5b11db73cb523d9e222939e42bb8d4d06ba29e83a6e77ab68e2c9c072d6b4d9085eb33f3d4d3aebfbf6624aba9455603d3",
-        "dest-filename": "metro-config-QHJlYWN0LW5hdGl2ZS9tZXRyby1jb25maWdAbnBtOjAuNzQuODM=-547f879453.tgz",
+        "url": "https://registry.npmjs.org/@react-native/metro-babel-transformer/-/metro-babel-transformer-0.74.84.tgz",
+        "sha512": "62d546abb8e48325040afe72b7804e15b397c96e1d7549fcf9d9f0186a4929d7e15d82f9a39fbe03135d13edb1f9265d923dc95157a418a3f045a6c51020016b",
+        "dest-filename": "metro-babel-transformer-QHJlYWN0LW5hdGl2ZS9tZXRyby1iYWJlbC10cmFuc2Zvcm1lckBucG06MC43NC44NA==-142c85cc69.tgz",
+        "dest": "flatpak-node/yarn-mirror/global/cache/locator"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/@react-native/metro-config/-/metro-config-0.74.84.tgz",
+        "sha512": "ffca6f3783f995d20dff87fee3e5a4779147f05e48eddc75c723c3987347aaee5b2d2f8ddf7e3b354f2df7bd36f4bb998a4bf9f5f1a3e01ea792f95ce064477e",
+        "dest-filename": "metro-config-QHJlYWN0LW5hdGl2ZS9tZXRyby1jb25maWdAbnBtOjAuNzQuODQ=-fcad7e0e4a.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -5715,9 +5750,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@rollup/plugin-replace/-/plugin-replace-5.0.5.tgz",
-        "sha512": "ad83b87ce8bc94c69383fcf925bfa12a7ac71d59fc8f697092ac324b89134612b258e2dfdb0493dac597af85b35a24dca074e9dac4e3a946ea223d84dfdb2529",
-        "dest-filename": "plugin-replace-QHJvbGx1cC9wbHVnaW4tcmVwbGFjZUBucG06NS4wLjU=-5559b48fa0.tgz",
+        "url": "https://registry.npmjs.org/@rollup/plugin-replace/-/plugin-replace-5.0.7.tgz",
+        "sha512": "3eac527eea2b907cff48fa729e02f283918212439c79ef4cd5b9318950ebe353ddeb59aa3f53cb3a80cf6e9978e1207699018ac15fc89fbe20a909862133a111",
+        "dest-filename": "plugin-replace-QHJvbGx1cC9wbHVnaW4tcmVwbGFjZUBucG06NS4wLjc=-67985e3f40.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -11427,9 +11462,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/css-loader/-/css-loader-6.10.0.tgz",
-        "sha512": "2d3480fe359bc1d32593eae198495b0d1daf6ed4284c13ebedf90913e9b1ac78feeebbb485498769f0d1cd62232074f0a62b5655aa98dbf51619171adf252047",
-        "dest-filename": "css-loader-Y3NzLWxvYWRlckBucG06Ni4xMC4w-ee3d62b5f7.tgz",
+        "url": "https://registry.npmjs.org/css-loader/-/css-loader-6.11.0.tgz",
+        "sha512": "09327e0044098eae4dccb81ae69137f6a762495e7a17ccb0088b2a348445d2bec10e05ac376e5a6b34e8a80160ed9aed03f534d7ac6e741ddf7e0c1e391c57ee",
+        "dest-filename": "css-loader-Y3NzLWxvYWRlckBucG06Ni4xMS4w-5c8d35975a.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -13089,13 +13124,6 @@
         "url": "https://registry.npmjs.org/electron-builder/-/electron-builder-24.13.3.tgz",
         "sha512": "c994a05477ede5d355968df5aa62407b80552907c5770a51c3bb05a758908250d10830faaf6db37d126e66586d079829f451d4c42304a161aad744a40a730022",
         "dest-filename": "electron-builder-ZWxlY3Ryb24tYnVpbGRlckBucG06MjQuMTMuMw==-8d7943d990.tgz",
-        "dest": "flatpak-node/yarn-mirror/global/cache/locator"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/electron-log/-/electron-log-5.1.6.tgz",
-        "sha512": "a3bfa036796d87aef07b15bbca6e27886020857139199ec9d5b85d3414a7a867a2310c09d0c86beff1ed0f0da6ff6b610a781a3acbdf8d4e450d9b3cd5309c5f",
-        "dest-filename": "electron-log-ZWxlY3Ryb24tbG9nQG5wbTo1LjEuNg==-57f01fd535.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -18315,9 +18343,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/js-draw/-/js-draw-1.20.2.tgz",
-        "sha512": "6aba6f8a4d61249d3b43bff6ca6de57f46214c441b32023d64729ed25ef57411678bd4de55313b05022f89fd39b992e6a69163ce6a80e1e013b9b17bb698ca0f",
-        "dest-filename": "js-draw-anMtZHJhd0BucG06MS4yMC4y-f0b6e572bb.tgz",
+        "url": "https://registry.npmjs.org/js-draw/-/js-draw-1.20.3.tgz",
+        "sha512": "21f03ef28b2aceeb526cdf56e6b02e118c87a908049f2057c21588c5bb5d32bc5a267c30069a5f39f1ed6672a152b6337cde28e00ea4921d0076283196d197b9",
+        "dest-filename": "js-draw-anMtZHJhd0BucG06MS4yMC4z-0674ebabb1.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -22704,9 +22732,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/pg/-/pg-8.11.5.tgz",
-        "sha512": "8ea80d1d228be5c6c38c5947c98b025e6403adf217ff746c37062aa5de0dd0ab7c9e22ee36844d1fe69acefe9c39de3780f87d6380e3402b5bf97d0c1f41ef9f",
-        "dest-filename": "pg-cGdAbnBtOjguMTEuNQ==-2317bcc708.tgz",
+        "url": "https://registry.npmjs.org/pg/-/pg-8.11.6.tgz",
+        "sha512": "e82c8be05d23def3e66a453dad675e458f2a1790a3737384f3acba62980323a62d28784dc828c610813c5396517c18ca4d98a4c2894a2055a1dc8db631e467a0",
+        "dest-filename": "pg-cGdAbnBtOjguMTEuNg==-309f69335d.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -22851,16 +22879,16 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.43.1.tgz",
-        "sha512": "108dfa32da3656bc7a545eeb9bbd3ca929deb1540a6f1116bcfadf03520f63a1e0733069943c7b10db71f8ada7e24278d6c2cb92e19f99bd192d249794386a3e",
-        "dest-filename": "playwright-core-cGxheXdyaWdodC1jb3JlQG5wbToxLjQzLjE=-7c96b3a4a4.tgz",
+        "url": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.44.1.tgz",
+        "sha512": "c21d095ad613ae1bf5f8e4ac2cf805cc6cedebb63b044fd94b78c4aa0181969da9a69d590e3f1cfbd20044d5b87707f5a68ab93201eb784336295fc6b91e1c14",
+        "dest-filename": "playwright-core-cGxheXdyaWdodC1jb3JlQG5wbToxLjQ0LjE=-ebc6fa0ff7.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/playwright/-/playwright-1.43.1.tgz",
-        "sha512": "57b4a81f46a2da436dd4c77d1371b06ace41f66f0a476195bf0667008e8f8349b7b21ed4be0898851ae1b338829aa309368b8f72488e864f13fbd6d200ad1520",
-        "dest-filename": "playwright-cGxheXdyaWdodEBucG06MS40My4x-de9db021f9.tgz",
+        "url": "https://registry.npmjs.org/playwright/-/playwright-1.44.1.tgz",
+        "sha512": "aabff4509e42140b65a08ddabc5f796342f5c50a3aaf72d002b2c883fcff3e8189eb16be130cebc0ee65a4daffd3d493c5d1ee5283f69afb842c94be84b76d82",
+        "dest-filename": "playwright-cGxheXdyaWdodEBucG06MS40NC4x-c2e8ff0a85.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -23085,6 +23113,13 @@
         "url": "https://registry.npmjs.org/postcss-modules-extract-imports/-/postcss-modules-extract-imports-3.0.0.tgz",
         "sha512": "6dd1e57859cfde46783580e1b869552be08cad0fe9a949bc6f1fe818bf772ba815c22725bd7e71d27efa7d830ab8818ace50013b2d77cecbea8dbd1ff764c45f",
         "dest-filename": "postcss-modules-extract-imports-cG9zdGNzcy1tb2R1bGVzLWV4dHJhY3QtaW1wb3J0c0BucG06My4wLjA=-4b65f2f138.tgz",
+        "dest": "flatpak-node/yarn-mirror/global/cache/locator"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/postcss-modules-extract-imports/-/postcss-modules-extract-imports-3.1.0.tgz",
+        "sha512": "93790d7b468d1500c06466e29f8f292f654d89d4c5d30e3f780483b31972b29a1bcd4df06502ce1a3ecbf607d17b4268f7fe2eb9dd3d0ec8c5347ef08a71aff1",
+        "dest-filename": "postcss-modules-extract-imports-cG9zdGNzcy1tb2R1bGVzLWV4dHJhY3QtaW1wb3J0c0BucG06My4xLjA=-b9192e0f4f.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -24139,9 +24174,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/react-native-document-picker/-/react-native-document-picker-9.1.1.tgz",
-        "sha512": "056fbb0dbb082ee153865066ecd50555498a29fe80c2471ff51d2af308825360e5186b402904edda21e93b9f839ffed630f07eaea36fdd7d47b26250d2de51de",
-        "dest-filename": "react-native-document-picker-cmVhY3QtbmF0aXZlLWRvY3VtZW50LXBpY2tlckBucG06OS4xLjE=-e29b9406dd.tgz",
+        "url": "https://registry.npmjs.org/react-native-document-picker/-/react-native-document-picker-9.2.0.tgz",
+        "sha512": "789c7569af1ed1704f3c8c73ecd6a31f8a5d056a0267ce0b1d8f4043d1aa9f53fe3efec82c36a5f65f2fba9b7a793ba6874852cf640471fc228d06b7f07d587b",
+        "dest-filename": "react-native-document-picker-cmVhY3QtbmF0aXZlLWRvY3VtZW50LXBpY2tlckBucG06OS4yLjA=-51fc0eb75f.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -24202,9 +24237,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/react-native-localize/-/react-native-localize-3.0.6.tgz",
-        "sha512": "a5fc3034a45f5dcc69d0b644ce3e685b6feea39a193a1890e0f62583cb8b96c97da432dc5a0d37c8b087a214d6297d36bc4fc1173f6192b1d3fe742d94efe216",
-        "dest-filename": "react-native-localize-cmVhY3QtbmF0aXZlLWxvY2FsaXplQG5wbTozLjAuNg==-83d0c7756f.tgz",
+        "url": "https://registry.npmjs.org/react-native-localize/-/react-native-localize-3.1.0.tgz",
+        "sha512": "03b46bc65f2fb80af9140aad305acce442cb766b33a212ba1681cbeaa960c71e0749cc8e9da768664b1bbca1db9fecd5e6713c92e776678909335d1c375db466",
+        "dest-filename": "react-native-localize-cmVhY3QtbmF0aXZlLWxvY2FsaXplQG5wbTozLjEuMA==-93753788fa.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -24244,9 +24279,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.10.3.tgz",
-        "sha512": "9d6f41d1fc9da4948defdf1ac2d76c95a998cd1a8333f148121f3464f0c45d5629a9836c0cba73e76a4cb6e2b2845e5a3a02657e2ae842b81d3b140d16d48cf0",
-        "dest-filename": "react-native-safe-area-context-cmVhY3QtbmF0aXZlLXNhZmUtYXJlYS1jb250ZXh0QG5wbTo0LjEwLjM=-df7292fbc7.tgz",
+        "url": "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.10.4.tgz",
+        "sha512": "ae4a48f1300bbd67d370282cc56b15ae5c7271b09ac239e4511a1c1f426a613e63af88d970e1bda007af8042fa10a8b286d1a2fe5ef764a5abe79226d1e4d346",
+        "dest-filename": "react-native-safe-area-context-cmVhY3QtbmF0aXZlLXNhZmUtYXJlYS1jb250ZXh0QG5wbTo0LjEwLjQ=-cd87a10298.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -24258,9 +24293,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/react-native-share/-/react-native-share-10.0.2.tgz",
-        "sha512": "119b3832db326ae008d733fcc574f5848141fe95ce64934308a7200a911f4d9157802533cfc30355b235a1c3f6840e7d5c745292a01075b2740454e98f138196",
-        "dest-filename": "react-native-share-cmVhY3QtbmF0aXZlLXNoYXJlQG5wbToxMC4wLjI=-3d9f747633.tgz",
+        "url": "https://registry.npmjs.org/react-native-share/-/react-native-share-10.2.1.tgz",
+        "sha512": "6762d6198587eeb68ce07e8e6aeb6dbf5b4485a078dd749624037c892ea86921bd0a7cab501798145e10a54d401f946035eca55d074df02b5b8b30871ede9ca1",
+        "dest-filename": "react-native-share-cmVhY3QtbmF0aXZlLXNoYXJlQG5wbToxMC4yLjE=-9dd4e0329b.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -24314,9 +24349,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/react-native-webview/-/react-native-webview-13.8.7.tgz",
-        "sha512": "afccbeaa5ca1dbe9adb8f84ebe03c1f42727da2b435da72f69516e07ad406137e2b33d58849e7b885104f23df60df0e9be5e8d85a685233cc7b2e9b0264f766d",
-        "dest-filename": "react-native-webview-cmVhY3QtbmF0aXZlLXdlYnZpZXdAbnBtOjEzLjguNw==-67ee40f45c.tgz",
+        "url": "https://registry.npmjs.org/react-native-webview/-/react-native-webview-13.10.3.tgz",
+        "sha512": "1acf13bf0bcabdff02e9e55adf39f20e7d4c7989c2eadc8fc81673d83fa9c72b3eb4c9f96c55270d576fed4a40084ca85c889fb0a446ef3259bb40fc394b1ddb",
+        "dest-filename": "react-native-webview-cmVhY3QtbmF0aXZlLXdlYnZpZXdAbnBtOjEzLjEwLjM=-333e940a2a.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -25504,9 +25539,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/sass/-/sass-1.76.0.tgz",
-        "sha512": "9dcdcb7aabc5d85356e71185d73c5989f756ddf7c8cf96816fb23bb52bcea0dbbbcf5450ea916df4c06e88fb6381a23ad985ab33fb718d694e085886b5fdb1a7",
-        "dest-filename": "sass-c2Fzc0BucG06MS43Ni4w-5f3fa7e7a1.tgz",
+        "url": "https://registry.npmjs.org/sass/-/sass-1.77.4.tgz",
+        "sha512": "bdc1770a4a30ea0f77f46300e0f794edbd8affd1402d7936285f49f3bb71747cd76d417d5d1411c12c5c02cfdf19a4e725e04577b528576da3de5ccc2dd3343f",
+        "dest-filename": "sass-c2Fzc0BucG06MS43Ny40-415d76960e.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -27646,6 +27681,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/tesseract.js-core/-/tesseract.js-core-5.1.1.tgz",
+        "sha512": "297ddb61253988670ed5725af9018f6e2f998e8daaaba78184d8d2191e44e6ad09b739288a924a394403ee987c905cad78211f110d266962eef0c097b6f5f9b9",
+        "dest-filename": "tesseract.js-core-dGVzc2VyYWN0LmpzLWNvcmVAbnBtOjUuMS4x-aba4001806.tgz",
+        "dest": "flatpak-node/yarn-mirror/global/cache/locator"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/tesseract.js/-/tesseract.js-5.0.4.tgz",
         "sha512": "18222849031996f4cfd80687ae350e1f6f7fa323bb6721d57be0614dec4470eeff9c30a54550d18e5dac6092ce59248d6d30eb9b9ab69b5fa07da7f7954ad9e5",
         "dest-filename": "tesseract.js-dGVzc2VyYWN0LmpzQG5wbTo1LjAuNA==-02addebd5b.tgz",
@@ -27653,9 +27695,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/tesseract.js/-/tesseract.js-5.0.5.tgz",
-        "sha512": "c6d4df79ce08ca713adec97a9001641a5d667a394dc6bf6a417cd518050777b20f7505ef7a8a6318ef44a61eb1912b96e6c5020bd013e9574198e0e1f19ca61a",
-        "dest-filename": "tesseract.js-dGVzc2VyYWN0LmpzQG5wbTo1LjAuNQ==-2cd9e6c58c.tgz",
+        "url": "https://registry.npmjs.org/tesseract.js/-/tesseract.js-5.1.0.tgz",
+        "sha512": "d9f1fda6a59d4b60bab9eff73a81a0f755adbfb46dff56ad62efe0d10d52185ae8c045bf9080641b7eb584b89e9c7b167b8296123c4e241ac2418a480561ba58",
+        "dest-filename": "tesseract.js-dGVzc2VyYWN0LmpzQG5wbTo1LjEuMA==-8ef2574ab1.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -30384,7 +30426,7 @@
         "type": "inline",
         "contents": "flatpak-node-cache",
         "dest-filename": "INSTALLATION_COMPLETE",
-        "dest": "flatpak-node/cache/ms-playwright/chromium-1112"
+        "dest": "flatpak-node/cache/ms-playwright/chromium-1117"
     },
     {
         "type": "inline",
@@ -30396,13 +30438,13 @@
         "type": "inline",
         "contents": "flatpak-node-cache",
         "dest-filename": "INSTALLATION_COMPLETE",
-        "dest": "flatpak-node/cache/ms-playwright/firefox-1447"
+        "dest": "flatpak-node/cache/ms-playwright/firefox-1449"
     },
     {
         "type": "inline",
         "contents": "flatpak-node-cache",
         "dest-filename": "INSTALLATION_COMPLETE",
-        "dest": "flatpak-node/cache/ms-playwright/webkit-1992"
+        "dest": "flatpak-node/cache/ms-playwright/webkit-2003"
     },
     {
         "type": "script",
