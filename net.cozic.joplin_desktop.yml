@@ -72,7 +72,6 @@ modules:
         YARN_GLOBAL_FOLDER: /run/build/joplin/flatpak-node/yarn-mirror/global
         TMPDIR: /run/build/joplin/flatpak-tmp
     build-commands:
-      - rm -rf packages/app-clipper
       - yarn config
       - yarn plugin import $FLATPAK_BUILDER_BUILDDIR/flatpak-node/flatpak-yarn.js
       - yarn convertToZip $(which yarn)
@@ -115,6 +114,9 @@ modules:
 
       - type: shell
         commands:
+          # set desktop filename for wayland
+          - jq '.desktopName = "net.cozic.joplin_desktop"' packages/app-desktop/package.json > package.json.tmp && mv package.json.tmp packages/app-desktop/package.json
+          - rm -rf packages/app-clipper
           - echo '{}' > packages/default-plugins/pluginRepositories.json
 
       - generated-sources.json
