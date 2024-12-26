@@ -1,11 +1,11 @@
 app-id: net.cozic.joplin_desktop
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '24.08'
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node18
+  - org.freedesktop.Sdk.Extension.node20
 separate-locales: false
 rename-icon: joplin
 rename-desktop-file: joplin.desktop
@@ -20,35 +20,50 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=com.canonical.AppMenu.Registrar
-# gtk-cups-backend
-  - --env=GTK_PATH=/app/lib/gtkmodules
   - --socket=cups
   - --system-talk-name=org.freedesktop.Avahi
+
+# gtk-cups-backend
+#  - --env=GTK_PATH=/app/lib/gtkmodules
 modules:
   - shared-modules/libsecret/libsecret.json
-  - cups/gtk-cups-backend.yml
+#  - cups/gtk-cups-backend.yml
 
   - name: rsync
+    config-opts:
+      - --with-included-popt
+      - --disable-md2man
     cleanup:
       - /share
     sources:
+      - type: git
+        url: https://github.com/RsyncProject/rsync.git
+        commit: 36212021f0b8f64d28a5713f6b485f97857187f1
+
+  - name: wasm-pack
+    buildsystem: simple
+    cleanup: ['*']
+    build-commands:
+      - install -Dm755 wasm-pack /app/bin
+    sources:
       - type: archive
-        url: https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
-        sha256: 7399e9a6708c32d678a72a63219e96f23be0be2336e50fd1348498d07041df90
-        x-checker-data:
-          type: anitya
-          project-id: 4217
-          versions:
-            <: '4.0'
-          url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
+        only-arches: [x86_64]
+        url: https://github.com/rustwasm/wasm-pack/releases/download/v0.13.1/wasm-pack-v0.13.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: c539d91ccab2591a7e975bcf82c82e1911b03335c80aa83d67ad25ed2ad06539
+
+      - type: archive
+        only-arches: [aarch64]
+        url: https://github.com/rustwasm/wasm-pack/releases/download/v0.13.1/wasm-pack-v0.13.1-aarch64-unknown-linux-musl.tar.gz
+        sha256: 2e65038769f8bbaa5fc237ad4bb523e692df99458cbd3e3d92525b89d8762379
+
 
   - name: joplin
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node18/bin
+      append-path: /usr/lib/sdk/node20/bin
       env:
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
-        npm_config_nodedir: /usr/lib/sdk/node18
+        npm_config_nodedir: /usr/lib/sdk/node20
         YARN_ENABLE_INLINE_BUILDS: '1'
         YARN_ENABLE_TELEMETRY: '0'
         YARN_ENABLE_NETWORK: '0'
@@ -61,9 +76,14 @@ modules:
       - yarn config
       - yarn plugin import $FLATPAK_BUILDER_BUILDDIR/flatpak-node/flatpak-yarn.js
       - yarn convertToZip $(which yarn)
-      - yarn install
+      - yarn install --mode=skip-build
+      # preinstall wasm-pack, details at https://github.com/EverlastingBugstopper/binary-install.git
+      - install -Dm755 /app/bin/wasm-pack -t packages/onenote-converter/node_modules/binary-install/node_modules/.bin
+      - install -Dm755 /app/bin/wasm-pack -t packages/onenote-converter/node_modules/wasm-pack/binary
+      - yarn rebuild
+      - yarn run postinstall
       # generateSha512.js require appimage build, need touch it
-      # If no it will cause electron-builder failed without error message even set debug!
+      # If not, it will cause electron-builder failed without error message
       - mkdir -p packages/app-desktop/dist && touch packages/app-desktop/dist/AppImage
       - |
         . flatpak-node/electron-builder-arch-args.sh
@@ -72,7 +92,6 @@ modules:
       - |
         cd packages/app-desktop
         cp -r dist/linux*unpacked /app/joplin-desktop
-        mv /app/joplin-desktop/{@joplinapp-desktop,joplin}
         for size in 16 32 64 128 256; do
           [[ -e "build/icons/${size}x${size}.png" ]] && \
             install -Dm644 "build/icons/${size}x${size}.png" \
@@ -80,7 +99,6 @@ modules:
         done
       - install -Dm755 joplin.desktop -t /app/share/applications
       - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/metainfo
-      - install -Dm755 clean-gpucache.sh -t /app/bin
       - install -Dm755 joplin-desktop.sh /app/bin/joplin-desktop
 
     sources:
@@ -108,22 +126,8 @@ modules:
         path: net.cozic.joplin_desktop.appdata.xml
 
       - type: script
-        dest-filename: clean-gpucache.sh
-        commands:
-          - set -e
-          - dir=~/.var/app/net.cozic.joplin_desktop/config/Joplin/GPUCache
-          - |
-            for f in $(find $dir -maxdepth 1 -mindepth 1)
-            do
-                if [ $(stat --format=%Z /usr/lib/*/libdrm.so.?) -gt $(stat --format=%Y $f) ];then
-                    rm $f
-                fi
-            done
-
-      - type: script
         dest-filename: joplin-desktop.sh
         commands:
-          - /app/bin/clean-gpucache.sh || true
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
           - if [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then
           - wayland_opt="--enable-features=UseOzonePlatform,WaylandWindowDecorations
