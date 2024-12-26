@@ -56,7 +56,6 @@ modules:
         YARN_GLOBAL_FOLDER: /run/build/joplin/flatpak-node/yarn-mirror/global
         TMPDIR: /run/build/joplin/flatpak-tmp
     build-commands:
-      - rm -rf packages/app-clipper
       - yarn config
       - yarn plugin import $FLATPAK_BUILDER_BUILDDIR/flatpak-node/flatpak-yarn.js
       - yarn convertToZip $(which yarn)
@@ -79,7 +78,6 @@ modules:
         done
       - install -Dm755 joplin.desktop -t /app/share/applications
       - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/metainfo
-      - install -Dm755 clean-gpucache.sh -t /app/bin
       - install -Dm755 joplin-desktop.sh /app/bin/joplin-desktop
 
     sources:
@@ -96,6 +94,9 @@ modules:
 
       - type: shell
         commands:
+          # set desktop filename for wayland
+          - jq '.desktopName = "net.cozic.joplin_desktop"' packages/app-desktop/package.json > package.json.tmp && mv package.json.tmp packages/app-desktop/package.json
+          - rm -rf packages/app-clipper
           - echo '{}' > packages/default-plugins/pluginRepositories.json
 
       - generated-sources.json
@@ -107,22 +108,8 @@ modules:
         path: net.cozic.joplin_desktop.appdata.xml
 
       - type: script
-        dest-filename: clean-gpucache.sh
-        commands:
-          - set -e
-          - dir=~/.var/app/net.cozic.joplin_desktop/config/Joplin/GPUCache
-          - |
-            for f in $(find $dir -maxdepth 1 -mindepth 1)
-            do
-                if [ $(stat --format=%Z /usr/lib/*/libdrm.so.?) -gt $(stat --format=%Y $f) ];then
-                    rm $f
-                fi
-            done
-
-      - type: script
         dest-filename: joplin-desktop.sh
         commands:
-          - /app/bin/clean-gpucache.sh || true
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
           - if ([[ $WAYLAND_DISPLAY == /* ]] && [ -e $WAYLAND_DISPLAY ]) || [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0}
             ]; then
