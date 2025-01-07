@@ -102,8 +102,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v3.2.6.tar.gz
-        sha256: 9c8f442596462407902cdd503bc59a7af81af1e04b8fb0de14e7138e504479cc
+        url: https://github.com/laurent22/joplin/archive/v3.2.7.tar.gz
+        sha256: 6fc28dd7c7b32bd316a008bd944917642166565a071530ca23ae6f4c597b40e7
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases
@@ -115,7 +115,8 @@ modules:
       - type: shell
         commands:
           # set desktop filename for wayland
-          - jq '.desktopName = "net.cozic.joplin_desktop"' packages/app-desktop/package.json > package.json.tmp && mv package.json.tmp packages/app-desktop/package.json
+          - jq '.desktopName = "net.cozic.joplin_desktop"' packages/app-desktop/package.json
+            > package.json.tmp && mv package.json.tmp packages/app-desktop/package.json
           - rm -rf packages/app-clipper
           - echo '{}' > packages/default-plugins/pluginRepositories.json
 
