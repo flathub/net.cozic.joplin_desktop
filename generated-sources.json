@@ -7647,9 +7647,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@types/node/-/node-18.19.50.tgz",
-        "sha512": "c689caf8d46b30146d90bd615427371beb97b63875025e28a412e3a959a2a5ee5901a058596e9c340881559d41be690185ea7af7cacfdd433769101d4802ee86",
-        "dest-filename": "node-QHR5cGVzL25vZGVAbnBtOjE4LjE5LjUw-73bdd2b46f.tgz",
+        "url": "https://registry.npmjs.org/@types/node/-/node-18.19.55.tgz",
+        "sha512": "cf3c39570e76db4e59aff9e612b48490de452ea5cfb8a5ff9397750fb44a1c04c6a94ef2e987d7f50c59ada53352b146a87e97ccecc6d7de810b7e65b490b80b",
+        "dest-filename": "node-QHR5cGVzL25vZGVAbnBtOjE4LjE5LjU1-943d57804d.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
