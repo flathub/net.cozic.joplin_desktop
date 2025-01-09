@@ -4854,16 +4854,16 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@js-draw/material-icons/-/material-icons-1.26.0.tgz",
-        "sha512": "1dbc62e4d6de17ffb6976c3d0fba07534689f5adf8db0c0332b45a759819231a4696f99b684e6cf4cd8de328e6a7b7882ecc80a45cd7e25664cd948da9d491a8",
-        "dest-filename": "material-icons-QGpzLWRyYXcvbWF0ZXJpYWwtaWNvbnNAbnBtOjEuMjYuMA==-05b8bcc190.tgz",
+        "url": "https://registry.npmjs.org/@js-draw/material-icons/-/material-icons-1.20.3.tgz",
+        "sha512": "9a899af2d10c67ca547f23405462821bee23b876ca98526d0a5655defeefe9c0fc09ed1279f400d132f75c1ef119900a851c9f6c92cc3e95c6bfa5687bd88240",
+        "dest-filename": "material-icons-QGpzLWRyYXcvbWF0ZXJpYWwtaWNvbnNAbnBtOjEuMjAuMw==-e935651aa6.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@js-draw/math/-/math-1.26.0.tgz",
-        "sha512": "edd392e5899faa5dc22624ba0332f49839ac343d634c69a3a5d97674e834b705f6cfc9ab5d88f7e7ec3aafa467fa0f915be5d80bb04a704d812bfe44176a6597",
-        "dest-filename": "math-QGpzLWRyYXcvbWF0aEBucG06MS4yNi4w-086b1b3c0b.tgz",
+        "url": "https://registry.npmjs.org/@js-draw/math/-/math-1.19.0.tgz",
+        "sha512": "0e35a25ed051cf507cbac2bbc9c294aa674c5680d2975bf79fec9285272f54d65a7ccb51054b1ebedc69af4adbc8f7ad6c7583094de8151bad704101099fc9a1",
+        "dest-filename": "math-QGpzLWRyYXcvbWF0aEBucG06MS4xOS4w-a82989485e.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
@@ -19645,9 +19645,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/js-draw/-/js-draw-1.26.0.tgz",
-        "sha512": "83d992abfa3f1ddb24a2aba7aa544f1f26d02bda446c50dc72eeaf306a60a80b5fe290beaef9f36afe6a97ebc38b3f31622a930d035744f77ceab71a75a349af",
-        "dest-filename": "js-draw-anMtZHJhd0BucG06MS4yNi4w-8e59290a62.tgz",
+        "url": "https://registry.npmjs.org/js-draw/-/js-draw-1.20.3.tgz",
+        "sha512": "21f03ef28b2aceeb526cdf56e6b02e118c87a908049f2057c21588c5bb5d32bc5a267c30069a5f39f1ed6672a152b6337cde28e00ea4921d0076283196d197b9",
+        "dest-filename": "js-draw-anMtZHJhd0BucG06MS4yMC4z-0674ebabb1.tgz",
         "dest": "flatpak-node/yarn-mirror/global/cache/locator"
     },
     {
