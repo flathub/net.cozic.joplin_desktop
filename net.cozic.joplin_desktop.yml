@@ -137,3 +137,15 @@ modules:
             --ozone-platform=wayland $wayland_opt"
           - fi
           - exec zypak-wrapper /app/joplin-desktop/joplin $wayland_opt "$@"
+
+  - name: joplin-plugins
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 *.jpl -t /app/joplin-desktop/resources/build/defaultPlugins
+    sources:
+      - type: file
+        url: https://github.com/JackGruber/joplin-plugin-backup/releases/download/v1.4.2/io.github.jackgruber.backup.jpl
+        sha256: 1989eefb085c86d64405d07195a81077743d43190a2771b7e9f8d07f1c44aeee
+      - type: file
+        url: https://github.com/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/download/v2.14.0/io.github.personalizedrefrigerator.js-draw.jpl
+        sha256: b2135b76ec0163495bf28c92b049ce1491ce305a700486241cfb9997d9b4ad38
