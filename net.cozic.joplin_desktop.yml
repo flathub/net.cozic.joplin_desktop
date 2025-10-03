@@ -1,9 +1,9 @@
 app-id: net.cozic.joplin_desktop
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: '25.08'
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node20
 separate-locales: false
@@ -28,9 +28,6 @@ finish-args:
 #  - --env=GTK_PATH=/app/lib/gtkmodules
 #
 modules:
-  - shared-modules/libsecret/libsecret.json
-#  - cups/gtk-cups-backend.yml
-
   - name: rsync
     config-opts:
       - --with-included-popt
