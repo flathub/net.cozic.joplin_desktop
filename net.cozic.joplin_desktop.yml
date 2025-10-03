@@ -37,7 +37,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/RsyncProject/rsync.git
-        commit: 36212021f0b8f64d28a5713f6b485f97857187f1
+        tag: v3.4.1
+        commit: 3305a7a063ab0167cab5bf7029da53abaa9fdb6e
 
   - name: wasm-pack
     buildsystem: simple
