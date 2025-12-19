@@ -1,9 +1,9 @@
 app-id: net.cozic.joplin_desktop
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: '25.08'
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node20
 separate-locales: false
@@ -102,8 +102,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v3.3.12.tar.gz
-        sha256: 0a12596230ab98632fd1324e35014ceb471172d60c9b4b2e95dff3da20a47931
+        url: https://github.com/laurent22/joplin/archive/v3.5.9.tar.gz
+        sha256: a49c7ee86100261d3751dd8a4ec1442021b8f80ba208ed93a664242b94a54d47
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases
@@ -111,6 +111,7 @@ modules:
           url-query: '"https://github.com/laurent22/joplin/archive/v" + $version +
             ".tar.gz"'
           timestamp-query: .[0] | .published_at
+          is-main-source: true
 
       - type: shell
         commands:
@@ -144,8 +145,22 @@ modules:
       - install -Dm644 *.jpl -t /app/joplin-desktop/resources/build/defaultPlugins
     sources:
       - type: file
-        url: https://github.com/JackGruber/joplin-plugin-backup/releases/download/v1.4.2/io.github.jackgruber.backup.jpl
-        sha256: 1989eefb085c86d64405d07195a81077743d43190a2771b7e9f8d07f1c44aeee
+        url: https://github.com/JackGruber/joplin-plugin-backup/releases/download/v1.4.5/io.github.jackgruber.backup.jpl
+        sha256: 1f642362c1a15edad7e7bf8de8d714f6d399dc1e6880d2b5ae8befd431326595
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/JackGruber/joplin-plugin-backup/releases/latest
+          version-query: .tag_name | sub("^v"; "")
+          url-query: '"https://github.com/JackGruber/joplin-plugin-backup/releases/download/v"
+            + $version + "/io.github.jackgruber.backup.jpl"'
+          timestamp-query: .published_at
       - type: file
-        url: https://github.com/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/download/v2.14.0/io.github.personalizedrefrigerator.js-draw.jpl
-        sha256: b2135b76ec0163495bf28c92b049ce1491ce305a700486241cfb9997d9b4ad38
+        url: https://github.com/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/download/v4.1.0/io.github.personalizedrefrigerator.js-draw.jpl
+        sha256: 530a771a2363c7ec1669f5467ae012815f3ddc7c4aa4f336d2c03f4448283e51
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/latest
+          version-query: .tag_name | sub("^v"; "")
+          url-query: '"https://github.com/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/download/v"
+            + $version + "/io.github.personalizedrefrigerator.js-draw.jpl"'
+          timestamp-query: .published_at
