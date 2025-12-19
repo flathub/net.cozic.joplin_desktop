@@ -111,6 +111,7 @@ modules:
           url-query: '"https://github.com/laurent22/joplin/archive/v" + $version +
             ".tar.gz"'
           timestamp-query: .published_at
+          is-main-source: true
 
       - type: shell
         commands:
