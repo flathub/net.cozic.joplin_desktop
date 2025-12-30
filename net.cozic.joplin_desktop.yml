@@ -155,8 +155,8 @@ modules:
             + $version + "/io.github.jackgruber.backup.jpl"'
           timestamp-query: .published_at
       - type: file
-        url: https://github.com/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/download/v4.1.0/io.github.personalizedrefrigerator.js-draw.jpl
-        sha256: 530a771a2363c7ec1669f5467ae012815f3ddc7c4aa4f336d2c03f4448283e51
+        url: https://github.com/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/download/v4.2.0/io.github.personalizedrefrigerator.js-draw.jpl
+        sha256: 28ebcd7ebd84bc3fcd0f9099d4f164a2591ff04c8173e9ccf30da4e5bd5d8bd3
         x-checker-data:
           type: json
           url: https://api.github.com/repos/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/latest
