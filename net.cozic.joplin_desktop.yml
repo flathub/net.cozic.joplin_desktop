@@ -145,8 +145,8 @@ modules:
       - install -Dm644 *.jpl -t /app/joplin-desktop/resources/build/defaultPlugins
     sources:
       - type: file
-        url: https://github.com/JackGruber/joplin-plugin-backup/releases/download/v1.5.0/io.github.jackgruber.backup.jpl
-        sha256: 9584c642dfcd34310ae8084e3ef54f08f115921808d57f2cee95be7db52d4c0d
+        url: https://github.com/JackGruber/joplin-plugin-backup/releases/download/v1.5.1/io.github.jackgruber.backup.jpl
+        sha256: 21c8a86849aeeb2a2ebe717a7a5e97811f434d30574eb9a04cc29b692c7963dd
         x-checker-data:
           type: json
           url: https://api.github.com/repos/JackGruber/joplin-plugin-backup/releases/latest
