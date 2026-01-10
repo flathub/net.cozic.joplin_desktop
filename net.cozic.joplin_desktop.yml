@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '25.08'
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node20
+  - org.freedesktop.Sdk.Extension.node22
 separate-locales: false
 rename-icon: joplin
 rename-desktop-file: joplin.desktop
@@ -23,11 +23,8 @@ finish-args:
   - --socket=cups
   - --system-talk-name=org.freedesktop.Avahi
 
-# gtk-cups-backend
-#  - --env=GTK_PATH=/app/lib/gtkmodules
 modules:
   - shared-modules/libsecret/libsecret.json
-#  - cups/gtk-cups-backend.yml
 
   - name: rsync
     config-opts:
@@ -60,16 +57,16 @@ modules:
   - name: joplin
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node20/bin
+      append-path: /usr/lib/sdk/node22/bin
       env:
         XDG_CACHE_HOME: /run/build/joplin/flatpak-node/cache
-        npm_config_nodedir: /usr/lib/sdk/node20
+        npm_config_nodedir: /usr/lib/sdk/node22
         YARN_ENABLE_INLINE_BUILDS: '1'
         YARN_ENABLE_TELEMETRY: '0'
         YARN_ENABLE_NETWORK: '0'
         YARN_ENABLE_GLOBAL_CACHE: '0'
         SHARP_IGNORE_GLOBAL_LIBVIPS: '1'
-        YARN_GLOBAL_FOLDER: /run/build/joplin/flatpak-node/yarn-mirror/global
+        YARN_GLOBAL_FOLDER: /run/build/joplin/flatpak-node/yarn-berry
         TMPDIR: /run/build/joplin/flatpak-tmp
     build-commands:
       - yarn config
@@ -79,10 +76,11 @@ modules:
       # preinstall wasm-pack, details at https://github.com/EverlastingBugstopper/binary-install.git
       - install -Dm755 /app/bin/wasm-pack -t packages/onenote-converter/node_modules/binary-install/node_modules/.bin
       - install -Dm755 /app/bin/wasm-pack -t packages/onenote-converter/node_modules/wasm-pack/binary
+      # drop git oper as we using archive
+      - sed -i 's/git config/true||git config/g' packages/default-plugins/node_modules/joplin-plugin-freehand-drawing/package.json
       - yarn rebuild
       - yarn run postinstall
-      # generateSha512.js require appimage build, need touch it
-      # If not, it will cause electron-builder failed without error message
+      # generateSha512.js require appimage build, touch it
       - mkdir -p packages/app-desktop/dist && touch packages/app-desktop/dist/AppImage
       - |
         . flatpak-node/electron-builder-arch-args.sh
@@ -119,7 +117,9 @@ modules:
           - jq '.desktopName = "net.cozic.joplin_desktop"' packages/app-desktop/package.json
             > package.json.tmp && mv package.json.tmp packages/app-desktop/package.json
           - rm -rf packages/app-clipper
-          - echo '{}' > packages/default-plugins/pluginRepositories.json
+          # filter plugin with package
+          - cat packages/default-plugins/pluginRepositories.json | jq 'with_entries(select(.value.package))' > pluginRepositories.json
+          - mv pluginRepositories.json packages/default-plugins/pluginRepositories.json 
 
       - generated-sources.json
 
@@ -153,14 +153,4 @@ modules:
           version-query: .tag_name | sub("^v"; "")
           url-query: '"https://github.com/JackGruber/joplin-plugin-backup/releases/download/v"
             + $version + "/io.github.jackgruber.backup.jpl"'
-          timestamp-query: .published_at
-      - type: file
-        url: https://github.com/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/download/v4.2.0/io.github.personalizedrefrigerator.js-draw.jpl
-        sha256: 28ebcd7ebd84bc3fcd0f9099d4f164a2591ff04c8173e9ccf30da4e5bd5d8bd3
-        x-checker-data:
-          type: json
-          url: https://api.github.com/repos/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/latest
-          version-query: .tag_name | sub("^v"; "")
-          url-query: '"https://github.com/personalizedrefrigerator/joplin-plugin-freehand-drawing/releases/download/v"
-            + $version + "/io.github.personalizedrefrigerator.js-draw.jpl"'
           timestamp-query: .published_at
