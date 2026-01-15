@@ -12,7 +12,8 @@ rename-desktop-file: joplin.desktop
 command: joplin-desktop
 finish-args:
   - --socket=pulseaudio
-  - --socket=x11
+  - --socket=fallback-x11
+  - --socket=wayland
   - --device=dri
   - --share=ipc
   - --share=network
@@ -134,10 +135,6 @@ modules:
         dest-filename: joplin-desktop.sh
         commands:
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
-          - if [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then
-          - wayland_opt="--enable-features=UseOzonePlatform,WaylandWindowDecorations
-            --ozone-platform=wayland $wayland_opt"
-          - fi
           - exec zypak-wrapper /app/joplin-desktop/joplin $wayland_opt "$@"
 
   - name: joplin-plugins
