@@ -16246,9 +16246,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz",
-        "sha512": "b81ab87a05874dc4eddf76bbdafa521b4cf71e73ee225e8da98713aca120d9ace81329768695b4cea971cacab6a4af47943207c87c9a91e61a627480c1df1ba3",
-        "dest-filename": "dotenv-ZG90ZW52QG5wbToxNi42LjE=-1d18971443.tgz",
+        "url": "https://registry.npmjs.org/dotenv/-/dotenv-17.0.1.tgz",
+        "sha512": "18b8e476eb802fb20c260fd99ce3e6f409d6289f36992136b735cb689ffa843e8387019f65a5c6efba01f2a6d17b289cccdc676f140aca1d0e139997ab46c01c",
+        "dest-filename": "dotenv-ZG90ZW52QG5wbToxNy4wLjE=-050987c31e.tgz",
         "dest": "flatpak-node/yarn-berry/cache/locator"
     },
     {
@@ -22028,9 +22028,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/joplin-plugin-freehand-drawing/-/joplin-plugin-freehand-drawing-4.2.0.tgz",
-        "sha512": "05aae13ad2d5eaa6a474a59cb534b0a9708aa8a000641fead592d6ecf2b785724e7bcaf22b5cc723baf4b2ddefa86272c456fc62203508d6a7b00b743d5476c1",
-        "dest-filename": "joplin-plugin-freehand-drawing-am9wbGluLXBsdWdpbi1mcmVlaGFuZC1kcmF3aW5nQG5wbTo0LjIuMA==-457c23b7fb.tgz",
+        "url": "https://registry.npmjs.org/joplin-plugin-freehand-drawing/-/joplin-plugin-freehand-drawing-4.3.0.tgz",
+        "sha512": "e0209123b31798d31aa7f113d1a7583da58661e087384382959dfd74400ee205ec37ccf9ca5deb7c749f4147f07ebc90210833b7040a420fcfa41450082ba172",
+        "dest-filename": "joplin-plugin-freehand-drawing-am9wbGluLXBsdWdpbi1mcmVlaGFuZC1kcmF3aW5nQG5wbTo0LjMuMA==-b9ee96e149.tgz",
         "dest": "flatpak-node/yarn-berry/cache/locator"
     },
     {
@@ -28181,9 +28181,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/react-native-device-info/-/react-native-device-info-14.0.4.tgz",
-        "sha512": "357d3030092748305e16712748543c92401c42b147ac6e029749958e80fed3efa268aaceba9886a415eab3cc51d12789c8f0b9ce974f97887f49a046972e94c4",
-        "dest-filename": "react-native-device-info-cmVhY3QtbmF0aXZlLWRldmljZS1pbmZvQG5wbToxNC4wLjQ=-bf03104855.tgz",
+        "url": "https://registry.npmjs.org/react-native-device-info/-/react-native-device-info-14.1.1.tgz",
+        "sha512": "9571697ba0c99b36d05cd2d6c653073f6c6e4d4e60c2b280bc8f1d08066e111856f5e3974ae6ce4087ac93d948067b22f69235f4632b729244bece0044f4589b",
+        "dest-filename": "react-native-device-info-cmVhY3QtbmF0aXZlLWRldmljZS1pbmZvQG5wbToxNC4xLjE=-560c5f8d99.tgz",
         "dest": "flatpak-node/yarn-berry/cache/locator"
     },
     {
@@ -30267,9 +30267,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/short-uuid/-/short-uuid-4.2.0.tgz",
-        "sha512": "af7731b8f3d94ae1744242ac2bd6c147bbbeedcc2e091cd6ce08cf874ec5e4dda22143606e59cc1dea41635eb1823e6dd651bd88e3fd93f4c469f635aa14736b",
-        "dest-filename": "short-uuid-c2hvcnQtdXVpZEBucG06NC4yLjA=-c9765dd0f2.tgz",
+        "url": "https://registry.npmjs.org/short-uuid/-/short-uuid-4.2.2.tgz",
+        "sha512": "204ee10d2195d94fd56680ac8dcb4a5fa979b796a4da3134f9a786262dcab6f8c850db995661d56148cd0619a8dfaf45216183b5a89e45a3bc03cdcbbf07e9ab",
+        "dest-filename": "short-uuid-c2hvcnQtdXVpZEBucG06NC4yLjI=-fcd0cef08c.tgz",
         "dest": "flatpak-node/yarn-berry/cache/locator"
     },
     {
