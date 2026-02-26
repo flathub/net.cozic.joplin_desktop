@@ -24394,6 +24394,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/minizlib/-/minizlib-3.1.0.tgz",
+        "sha512": "299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397",
+        "dest-filename": "minizlib-bWluaXpsaWJAbnBtOjMuMS4w-f47365cc2c.tgz",
+        "dest": "flatpak-node/yarn-berry/cache/locator"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/mississippi/-/mississippi-3.0.0.tgz",
         "sha512": "c78ef54ac56352d051b5cbdde01cca13d9050beff64de5a0282830d1b65cc356fd9765f7417e6f096805f8a6996989bced2b3ffeb1e75abcaea43ae02ef99290",
         "dest-filename": "mississippi-bWlzc2lzc2lwcGlAbnBtOjMuMC4w-47afcd6898.tgz",
@@ -31817,6 +31824,13 @@
         "url": "https://registry.npmjs.org/tar/-/tar-7.4.3.tgz",
         "sha512": "e52ed56bc84a7d5ed6e54ea0dda6315e694fa19540c14332f4038ac85d9f56e65ad940f7a998e0e7bf0eacb46df0f70d3753e579568bff9ff26004cd2f420253",
         "dest-filename": "tar-dGFyQG5wbTo3LjQuMw==-12a2a4fc6d.tgz",
+        "dest": "flatpak-node/yarn-berry/cache/locator"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/tar/-/tar-7.5.8.tgz",
+        "sha512": "498901b4af7dbb4c976be2162f4251cf3725ed1c4da6f5ff534f19fbc0ca9f2b1f9e8eccfae1319d3647f0af951a04a17f6a853cab5b36bf50065f27ed604fe9",
+        "dest-filename": "tar-dGFyQG5wbTo3LjUuOA==-5fddc22e0f.tgz",
         "dest": "flatpak-node/yarn-berry/cache/locator"
     },
     {
