@@ -10163,9 +10163,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/@types/uuid/-/uuid-10.0.0.tgz",
-        "sha512": "ee0a86dfc1321e0c8fd52fbbfb1a2616d2fe64d1dc2afe83c0d682666266a35be032e8321774c29d7560e2dd6e93cf662cdc272ed9d8dd3a4ea423b2a75ff11d",
-        "dest-filename": "uuid-QHR5cGVzL3V1aWRAbnBtOjEwLjAuMA==-e3958f8b0f.tgz",
+        "url": "https://registry.npmjs.org/@types/uuid/-/uuid-11.0.0.tgz",
+        "sha512": "1d5ca4f278f69be8dc15135acf3ab254a8997b3ca10caac6500de3944720fe767a32cfaa1f0a1c6dad58fc06956b39c94c033dc697454a1fa9b5b36b84e1af64",
+        "dest-filename": "uuid-QHR5cGVzL3V1aWRAbnBtOjExLjAuMA==-9f94bd34e5.tgz",
         "dest": "flatpak-node/yarn-berry/cache/locator"
     },
     {
@@ -34099,6 +34099,13 @@
         "url": "https://registry.npmjs.org/uuid/-/uuid-11.1.0.tgz",
         "sha512": "d3f03dac3cbd3fb709fbcc3573d583f55ffff568f5e427b630fcfc462eb4df6baccfe35f78fc71e4070dddb37eafa64bea3128d3aebfc8d601ded9f8a50131f8",
         "dest-filename": "uuid-dXVpZEBucG06MTEuMS4w-d2da43b49b.tgz",
+        "dest": "flatpak-node/yarn-berry/cache/locator"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.npmjs.org/uuid/-/uuid-13.0.0.tgz",
+        "sha512": "5d07a021a0535548d21e588aa9c9c5a98ca901de12f96098b79348791b3ac3f500af2ef3f18f63e59c1144be24ceaf54dec0fabfef397abf45be411a0698e2db",
+        "dest-filename": "uuid-dXVpZEBucG06MTMuMC4w-2742b24d1e.tgz",
         "dest": "flatpak-node/yarn-berry/cache/locator"
     },
     {
