@@ -30855,23 +30855,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.npmjs.org/prosemirror-gapcursor/-/prosemirror-gapcursor-1.3.2.tgz",
-        "sha512": "c2d8ecc1505ddaf69046b9d865a0426f20eaaf6df611de29d903ed44850ae45baa1d82865a4130974f2840ce13c3b0ce47416c6ac011579b8916f3195b174dc5",
-        "dest-filename": "prosemirror-gapcursor-cHJvc2VtaXJyb3ItZ2FwY3Vyc29yQG5wbToxLjMuMg==-8de9e9c0f7.tgz",
-        "dest": "flatpak-node/yarn-berry/cache/locator"
-    },
-    {
-        "type": "file",
         "url": "https://registry.npmjs.org/prosemirror-gapcursor/-/prosemirror-gapcursor-1.4.0.tgz",
         "sha512": "cf4d2abeead2742116508ba58a3fe2b076aabb8b8b4bcaff162eb521b8dd20f244a274208206c9b0b9ecb56ecb81d938cd0ebcff2afa07a6dfeec257a3022075",
         "dest-filename": "prosemirror-gapcursor-cHJvc2VtaXJyb3ItZ2FwY3Vyc29yQG5wbToxLjQuMA==-ec17d7ca4d.tgz",
-        "dest": "flatpak-node/yarn-berry/cache/locator"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/prosemirror-history/-/prosemirror-history-1.4.1.tgz",
-        "sha512": "d89643f33d89be226b6e80fd70fb97fd2bffd428459e0fb1876b42850d97e1b0761de2beaeb6bf6e6277c469ed09c8e13aa2334831ba21dedef1127d40f5cb11",
-        "dest-filename": "prosemirror-history-cHJvc2VtaXJyb3ItaGlzdG9yeUBucG06MS40LjE=-7ac68fc823.tgz",
         "dest": "flatpak-node/yarn-berry/cache/locator"
     },
     {
@@ -30935,13 +30921,6 @@
         "url": "https://registry.npmjs.org/prosemirror-tables/-/prosemirror-tables-1.7.1.tgz",
         "sha512": "79143dec17fe8bd11bcbdf506f2022ca8bf8de238a8166bb4021a5cbe96b0edede7d9d6ff0d5a89615e2078de14831885d3d545e06ece0a24dddad3a146a6bd5",
         "dest-filename": "prosemirror-tables-cHJvc2VtaXJyb3ItdGFibGVzQG5wbToxLjcuMQ==-6925929814.tgz",
-        "dest": "flatpak-node/yarn-berry/cache/locator"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.npmjs.org/prosemirror-transform/-/prosemirror-transform-1.10.4.tgz",
-        "sha512": "a700f2db69c09c6a8d4757de390287c68164914b5ea68140777af685b103b277f8c29e7b90a037ea15ec0779e303d16d38d044c120e70de0a225ef88b43fb293",
-        "dest-filename": "prosemirror-transform-cHJvc2VtaXJyb3ItdHJhbnNmb3JtQG5wbToxLjEwLjQ=-a5835bdd7e.tgz",
         "dest": "flatpak-node/yarn-berry/cache/locator"
     },
     {
