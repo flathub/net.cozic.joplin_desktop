@@ -85,7 +85,7 @@ modules:
       - |
         . flatpak-node/electron-builder-arch-args.sh
         cd packages/app-desktop
-        yarn run dist $ELECTRON_BUILDER_ARCH_ARGS --config.asar=false --linux --dir
+        yarn run dist $ELECTRON_BUILDER_ARCH_ARGS --config.asar=false --config.electronDownload.isVerifyChecksum="false" --linux --dir --publish=never
       - |
         cd packages/app-desktop
         cp -r dist/linux*unpacked /app/joplin-desktop
@@ -101,8 +101,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v3.6.14.tar.gz
-        sha256: b3a055bcd5c330705dcfd328b48e03118c153b2d8918cf25cfd8ea71d5bc1746
+        url: https://github.com/laurent22/joplin/archive/v3.7.10.tar.gz
+        sha256: 2806740e6a3db4dc483d0e2d8ef8e9d906adac7559328a3627dbac4bedee3eec
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases/latest
