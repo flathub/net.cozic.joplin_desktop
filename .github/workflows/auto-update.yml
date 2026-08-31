@@ -12,7 +12,7 @@ env:
 
 jobs:
   flatpak-external-data-checker:
-    name: 'check update (${{ github.ref_name }})'
+    name: 'check update (${{ matrix.branch || github.ref_name }})'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -48,7 +48,7 @@ jobs:
           python-version: 3.9
 
       - name: generate node sources
-        if: steps.is-updated.outputs.updated && matrix.branch == ''
+        if: steps.is-updated.outputs.updated
         run: |
           git submodule update --init
           ver=$(grep release net.cozic.joplin_desktop.appdata.xml | grep -m1 -oP '(?<=version=.)[^"]+')
