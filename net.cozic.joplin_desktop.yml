@@ -106,10 +106,10 @@ modules:
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases
-          version-query: map(select(.prerelease == true)) | first | .tag_name | sub("^v"; "")
+          version-query: .[0] | .tag_name | sub("^v"; "")
           url-query: '"https://github.com/laurent22/joplin/archive/v" + $version +
             ".tar.gz"'
-          timestamp-query: .published_at
+          timestamp-query: .[0] | .published_at
           is-main-source: true
 
       - type: shell
