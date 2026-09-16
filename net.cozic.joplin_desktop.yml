@@ -21,12 +21,11 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=com.canonical.AppMenu.Registrar
+  - --talk-name=org.a11y.Bus
   - --socket=cups
   - --system-talk-name=org.freedesktop.Avahi
 
 modules:
-  - shared-modules/libsecret/libsecret.json
-
   - name: rsync
     config-opts:
       - --with-included-popt
@@ -36,7 +35,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/RsyncProject/rsync.git
-        commit: 36212021f0b8f64d28a5713f6b485f97857187f1
+        tag: v3.4.1
+        commit: 3305a7a063ab0167cab5bf7029da53abaa9fdb6e
 
   - name: wasm-pack
     buildsystem: simple
@@ -53,7 +53,6 @@ modules:
         only-arches: [aarch64]
         url: https://github.com/rustwasm/wasm-pack/releases/download/v0.13.1/wasm-pack-v0.13.1-aarch64-unknown-linux-musl.tar.gz
         sha256: 2e65038769f8bbaa5fc237ad4bb523e692df99458cbd3e3d92525b89d8762379
-
 
   - name: joplin
     buildsystem: simple
@@ -86,10 +85,11 @@ modules:
       - |
         . flatpak-node/electron-builder-arch-args.sh
         cd packages/app-desktop
-        yarn run dist $ELECTRON_BUILDER_ARCH_ARGS --config.asar=false --linux --dir
+        yarn run dist $ELECTRON_BUILDER_ARCH_ARGS --config.asar=false --config.electronDownload.isVerifyChecksum="false" --linux --dir --publish=never
       - |
         cd packages/app-desktop
         cp -r dist/linux*unpacked /app/joplin-desktop
+        mv /app/joplin-desktop/{@joplinapp-desktop,joplin}
         for size in 16 32 64 128 256; do
           [[ -e "build/icons/${size}x${size}.png" ]] && \
             install -Dm644 "build/icons/${size}x${size}.png" \
@@ -101,15 +101,15 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/laurent22/joplin/archive/v3.6.14.tar.gz
-        sha256: b3a055bcd5c330705dcfd328b48e03118c153b2d8918cf25cfd8ea71d5bc1746
+        url: https://github.com/laurent22/joplin/archive/v3.7.10.tar.gz
+        sha256: 2806740e6a3db4dc483d0e2d8ef8e9d906adac7559328a3627dbac4bedee3eec
         x-checker-data:
           type: json
           url: https://api.github.com/repos/laurent22/joplin/releases
-          version-query: .[0] | .tag_name | sub("^v"; "")
+          version-query: map(select(.prerelease == true)) | first | .tag_name | sub("^v"; "")
           url-query: '"https://github.com/laurent22/joplin/archive/v" + $version +
             ".tar.gz"'
-          timestamp-query: .[0] | .published_at
+          timestamp-query: .published_at
           is-main-source: true
 
       - type: shell
