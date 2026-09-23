@@ -30,8 +30,16 @@ Joplin will open a dialogue to select editor.
 `flatpak permission-remove desktop-used-apps text/markdown net.cozic.joplin_desktop`
 
 ### flatpak-spawn
-This can run command outside flatpak, which means this flatpak most likely to be unsandboxed.  
-This feature is enabled for full external editor support.  
+Using this feature requires additional permissions so Joplin can run commands outside of the Flatpak sandbox. 
+
+To do this, use [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal), find the "Session Bus" -> "Talks" section and add `org.freedesktop.Flatpak` to it. Alternatively, run this command to set the permission:
+
+```bash
+flatpak override -u net.cozic.joplin_desktop --talk-name=org.freedesktop.Flatpak
+``` 
+
+Then you can change the external editor command in the Joplin settings to use flatpak-spawn:
+
 ```text
 Path:
 /bin/flatpak-spawn
