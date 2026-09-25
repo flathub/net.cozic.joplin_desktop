@@ -1,5 +1,5 @@
 ## File system sync on removable-media
-This flatpak only have permission to access user's home directory.  
+This Flatpak only has access to the Joplin config and backup directories by default.
 Need to manually add permission to allow access other location. 
 
 
