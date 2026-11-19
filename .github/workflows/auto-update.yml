@@ -38,6 +38,11 @@ jobs:
           persist-credentials: false
 
       - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
+        env:
+          # TODO: Remove once https://github.com/flathub-infra/flatpak-external-data-checker/issues/654 is fixed
+          GIT_CONFIG_COUNT: 1
+          GIT_CONFIG_KEY_0: safe.directory
+          GIT_CONFIG_VALUE_0: '*'
         with:
           args: --edit-only ${{ env.FLATPAK_ID }}.yml
 
@@ -77,5 +82,9 @@ jobs:
           GIT_AUTHOR_EMAIL: ${{ env.GIT_USER_NAME }}
           GIT_COMMITTER_EMAIL: ${{ env.GIT_USER_EMAIL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # TODO: Remove once https://github.com/flathub-infra/flatpak-external-data-checker/issues/654 is fixed
+          GIT_CONFIG_COUNT: 1
+          GIT_CONFIG_KEY_0: safe.directory
+          GIT_CONFIG_VALUE_0: '*'
         with:
           args: --update --never-fork ${{ env.FLATPAK_ID }}.yml
