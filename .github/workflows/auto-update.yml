@@ -50,7 +50,7 @@ jobs:
         id: is-updated 
         run: |
           git status -s -uno
-          [ -z "$(git status -s -uno)" ] || echo "name=updated::true" >> $GITHUB_OUTPUT
+          [ -z "$(git status -s -uno)" ] || echo "updated=true" >> $GITHUB_OUTPUT
 
       - uses: actions/setup-python@v7
         if: steps.is-updated.outputs.updated
